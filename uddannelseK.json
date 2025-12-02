@@ -1,0 +1,387 @@
+[
+  {
+    "uddannelses_id": "29",
+    "uddannelses_navn": "Erhvervsfaglige grundforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "2910",
+    "uddannelses_navn": "Omsorg, sundhed og pædagogik (OSP), grundforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "2915",
+    "uddannelses_navn": "Kontor, handel og forretningsservice (KHF), grundforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "2920",
+    "uddannelses_navn": "Fødevarer, jordbrug og oplevelser (FJO), grundforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "2925",
+    "uddannelses_navn": "Teknologi, byggeri og transport (TBT), grundforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "30",
+    "uddannelses_navn": "Erhvervsfaglige uddannelser",
+    "antal_fuldført": "14517"
+  },
+  {
+    "uddannelses_id": "3010",
+    "uddannelses_navn": "Omsorg, sundhed og pædagogik (OSP)",
+    "antal_fuldført": "6317"
+  },
+  {
+    "uddannelses_id": "3015",
+    "uddannelses_navn": "Kontor, handel og forretningsservice (KHF)",
+    "antal_fuldført": "5461"
+  },
+  {
+    "uddannelses_id": "3020",
+    "uddannelses_navn": "Fødevarer mv. (FJO)",
+    "antal_fuldført": "761"
+  },
+  {
+    "uddannelses_id": "3025",
+    "uddannelses_navn": "Jordbrug og natur (FJO)",
+    "antal_fuldført": "422"
+  },
+  {
+    "uddannelses_id": "3030",
+    "uddannelses_navn": "Oplevelsesområdet (FJO)",
+    "antal_fuldført": "337"
+  },
+  {
+    "uddannelses_id": "3035",
+    "uddannelses_navn": "Byggeriområdet (TBT)",
+    "antal_fuldført": "302"
+  },
+  {
+    "uddannelses_id": "3040",
+    "uddannelses_navn": "Teknologiområdet, strøm og elektronik mv. (TBT)",
+    "antal_fuldført": "139"
+  },
+  {
+    "uddannelses_id": "3045",
+    "uddannelses_navn": "Teknologiområdet, grafisk teknik og medieproduktion (TBT)",
+    "antal_fuldført": "115"
+  },
+  {
+    "uddannelses_id": "3050",
+    "uddannelses_navn": "Teknologiområdet, cykel-, auto- og skibsmekanik mv. (TBT)",
+    "antal_fuldført": "54"
+  },
+  {
+    "uddannelses_id": "3055",
+    "uddannelses_navn": "Teknologiområdet, maskinteknik og produktion (TBT)",
+    "antal_fuldført": "334"
+  },
+  {
+    "uddannelses_id": "3060",
+    "uddannelses_navn": "Teknik- og industriuddannelser i øvrigt (TBT)",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "3065",
+    "uddannelses_navn": "Transport og logistikområdet (TBT)",
+    "antal_fuldført": "248"
+  },
+  {
+    "uddannelses_id": "3090",
+    "uddannelses_navn": "Andre erhvervsfaglige uddannelser",
+    "antal_fuldført": "27"
+  },
+  {
+    "uddannelses_id": "35",
+    "uddannelses_navn": "Adgangsgivende uddannelsesforløb",
+    "antal_fuldført": "171"
+  },
+  {
+    "uddannelses_id": "3510",
+    "uddannelses_navn": "Adgangskurser - videregående udd.",
+    "antal_fuldført": "142"
+  },
+  {
+    "uddannelses_id": "3520",
+    "uddannelses_navn": "Adgangseksamen - ingeniøruddannelse",
+    "antal_fuldført": "29"
+  },
+  {
+    "uddannelses_id": "3530",
+    "uddannelses_navn": "Adgangsgivende værkstedsskoleforløb",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "40",
+    "uddannelses_navn": "Korte videregående uddannelser, KVU",
+    "antal_fuldført": "4530"
+  },
+  {
+    "uddannelses_id": "4020",
+    "uddannelses_navn": "Pædagogisk, KVU",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "4024",
+    "uddannelses_navn": "Medier og kommunikation, KVU",
+    "antal_fuldført": "583"
+  },
+  {
+    "uddannelses_id": "4030",
+    "uddannelses_navn": "Kunstnerisk, KVU",
+    "antal_fuldført": "15"
+  },
+  {
+    "uddannelses_id": "4038",
+    "uddannelses_navn": "Samfundsfaglig, Økonomisk-Merkantil, KVU",
+    "antal_fuldført": "2533"
+  },
+  {
+    "uddannelses_id": "4058",
+    "uddannelses_navn": "Teknisk, KVU",
+    "antal_fuldført": "699"
+  },
+  {
+    "uddannelses_id": "4075",
+    "uddannelses_navn": "Fødevarer, bio- og laboratorieteknik, KVU",
+    "antal_fuldført": "311"
+  },
+  {
+    "uddannelses_id": "4080",
+    "uddannelses_navn": "Jordbrug, natur og miljø, KVU",
+    "antal_fuldført": "73"
+  },
+  {
+    "uddannelses_id": "4085",
+    "uddannelses_navn": "Maritimt, KVU",
+    "antal_fuldført": "8"
+  },
+  {
+    "uddannelses_id": "4089",
+    "uddannelses_navn": "Sundhedsfaglig, KVU",
+    "antal_fuldført": "115"
+  },
+  {
+    "uddannelses_id": "4095",
+    "uddannelses_navn": "Politi og forsvar mv., KVU",
+    "antal_fuldført": "193"
+  },
+  {
+    "uddannelses_id": "50",
+    "uddannelses_navn": "Mellemlange videregående uddannelser, MVU",
+    "antal_fuldført": "14452"
+  },
+  {
+    "uddannelses_id": "5020",
+    "uddannelses_navn": "Pædagogisk, MVU",
+    "antal_fuldført": "4451"
+  },
+  {
+    "uddannelses_id": "5024",
+    "uddannelses_navn": "Medier og kommunikation, MVU",
+    "antal_fuldført": "510"
+  },
+  {
+    "uddannelses_id": "5025",
+    "uddannelses_navn": "Humanistisk og teologisk, MVU",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "5030",
+    "uddannelses_navn": "Kunstnerisk, MVU",
+    "antal_fuldført": "443"
+  },
+  {
+    "uddannelses_id": "5038",
+    "uddannelses_navn": "Samfundsfaglig, Økonomisk-Merkantil, MVU",
+    "antal_fuldført": "3051"
+  },
+  {
+    "uddannelses_id": "5039",
+    "uddannelses_navn": "Samfundsvidenskab, MVU",
+    "antal_fuldført": "18"
+  },
+  {
+    "uddannelses_id": "5058",
+    "uddannelses_navn": "Teknisk, MVU",
+    "antal_fuldført": "1022"
+  },
+  {
+    "uddannelses_id": "5059",
+    "uddannelses_navn": "Teknisk videnskab, MVU",
+    "antal_fuldført": "2"
+  },
+  {
+    "uddannelses_id": "5075",
+    "uddannelses_navn": "Fødevarer, Bio- og laboratorieteknik, MVU",
+    "antal_fuldført": "279"
+  },
+  {
+    "uddannelses_id": "5080",
+    "uddannelses_navn": "Jordbrug, natur og miljø, MVU",
+    "antal_fuldført": "47"
+  },
+  {
+    "uddannelses_id": "5085",
+    "uddannelses_navn": "Maritimt, MVU",
+    "antal_fuldført": "8"
+  },
+  {
+    "uddannelses_id": "5089",
+    "uddannelses_navn": "Sundhedsfaglig, MVU",
+    "antal_fuldført": "4599"
+  },
+  {
+    "uddannelses_id": "5095",
+    "uddannelses_navn": "Politi og forsvar mv., MVU",
+    "antal_fuldført": "22"
+  },
+  {
+    "uddannelses_id": "60",
+    "uddannelses_navn": "Bacheloruddannelser, BACH",
+    "antal_fuldført": "10505"
+  },
+  {
+    "uddannelses_id": "6020",
+    "uddannelses_navn": "Pædagogisk, BACH",
+    "antal_fuldført": "117"
+  },
+  {
+    "uddannelses_id": "6025",
+    "uddannelses_navn": "Humanistisk og teologisk, BACH",
+    "antal_fuldført": "2302"
+  },
+  {
+    "uddannelses_id": "6030",
+    "uddannelses_navn": "Kunstnerisk, BACH",
+    "antal_fuldført": "349"
+  },
+  {
+    "uddannelses_id": "6035",
+    "uddannelses_navn": "Naturvidenskab, BACH",
+    "antal_fuldført": "1009"
+  },
+  {
+    "uddannelses_id": "6039",
+    "uddannelses_navn": "Samfundsvidenskab, BACH",
+    "antal_fuldført": "4229"
+  },
+  {
+    "uddannelses_id": "6059",
+    "uddannelses_navn": "Teknisk videnskab, BACH",
+    "antal_fuldført": "796"
+  },
+  {
+    "uddannelses_id": "6075",
+    "uddannelses_navn": "Fødevarer, Bio- og laboratorieteknik, BACH",
+    "antal_fuldført": "41"
+  },
+  {
+    "uddannelses_id": "6080",
+    "uddannelses_navn": "Jordbrug, natur og miljø, BACH",
+    "antal_fuldført": "253"
+  },
+  {
+    "uddannelses_id": "6090",
+    "uddannelses_navn": "Sundhedsvidenskab, BACH",
+    "antal_fuldført": "1409"
+  },
+  {
+    "uddannelses_id": "70",
+    "uddannelses_navn": "Lange videregående uddannelser, LVU",
+    "antal_fuldført": "13130"
+  },
+  {
+    "uddannelses_id": "7020",
+    "uddannelses_navn": "Pædagogisk, LVU",
+    "antal_fuldført": "635"
+  },
+  {
+    "uddannelses_id": "7025",
+    "uddannelses_navn": "Humanistisk og teologisk, LVU",
+    "antal_fuldført": "2043"
+  },
+  {
+    "uddannelses_id": "7030",
+    "uddannelses_navn": "Kunstnerisk, LVU",
+    "antal_fuldført": "407"
+  },
+  {
+    "uddannelses_id": "7035",
+    "uddannelses_navn": "Naturvidenskab, LVU",
+    "antal_fuldført": "1357"
+  },
+  {
+    "uddannelses_id": "7039",
+    "uddannelses_navn": "Samfundsvidenskab, LVU",
+    "antal_fuldført": "5098"
+  },
+  {
+    "uddannelses_id": "7059",
+    "uddannelses_navn": "Teknisk videnskab, LVU",
+    "antal_fuldført": "1418"
+  },
+  {
+    "uddannelses_id": "7075",
+    "uddannelses_navn": "Fødevarer, Bio- og laboratorieteknik, LVU",
+    "antal_fuldført": "91"
+  },
+  {
+    "uddannelses_id": "7080",
+    "uddannelses_navn": "Jordbrug, natur og miljø, LVU",
+    "antal_fuldført": "392"
+  },
+  {
+    "uddannelses_id": "7090",
+    "uddannelses_navn": "Sundhedsvidenskab, LVU",
+    "antal_fuldført": "1689"
+  },
+  {
+    "uddannelses_id": "7095",
+    "uddannelses_navn": "Politi og forsvar mv., LVU",
+    "antal_fuldført": "0"
+  },
+  {
+    "uddannelses_id": "80",
+    "uddannelses_navn": "Ph.d. og forskeruddannelser",
+    "antal_fuldført": "945"
+  },
+  {
+    "uddannelses_id": "8025",
+    "uddannelses_navn": "Humanistisk og teologisk, Ph.d.",
+    "antal_fuldført": "74"
+  },
+  {
+    "uddannelses_id": "8030",
+    "uddannelses_navn": "Kunstnerisk, Ph.d.",
+    "antal_fuldført": "19"
+  },
+  {
+    "uddannelses_id": "8035",
+    "uddannelses_navn": "Naturvidenskab, Ph.d.",
+    "antal_fuldført": "106"
+  },
+  {
+    "uddannelses_id": "8039",
+    "uddannelses_navn": "Samfundsvidenskab, Ph.d.",
+    "antal_fuldført": "99"
+  },
+  {
+    "uddannelses_id": "8059",
+    "uddannelses_navn": "Teknisk videnskab, Ph.d.",
+    "antal_fuldført": "149"
+  },
+  {
+    "uddannelses_id": "8080",
+    "uddannelses_navn": "Jordbrug, natur og miljø, Ph.d.",
+    "antal_fuldført": "48"
+  },
+  {
+    "uddannelses_id": "8090",
+    "uddannelses_navn": "Sundhedsvidenskab, Ph.d.",
+    "antal_fuldført": "450"
+  }
+]
