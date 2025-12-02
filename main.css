@@ -84,7 +84,7 @@ nav li:hover {
 }
 
 #chartsektion{
-    background-color: red;
+    background-color: white;
     flex: 1;
     display: flex;
     justify-content: center;

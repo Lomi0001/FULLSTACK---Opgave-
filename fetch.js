@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     fetch('https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/optagelsesdata.json')
         .then(response => response.json())
@@ -35,4 +35,4 @@ const Datamatiker = document.querySelector("#datamatiker")
             });
 
         });
-});*/
+});
