@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/optagelsesdata.json')
         .then(response => response.json())
         .then(data => {
+const Datamatiker = document.querySelector("#datamatiker")
+
+          Datamatiker.addEventListener("click", function () {
+              console.log("button clicked")
+          })
 
             const ObjectData = data.Optagelsesdata[0];
 
