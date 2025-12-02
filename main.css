@@ -1,0 +1,61 @@
+body{
+    font-family: AppleMyungjo;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+header img {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .socials{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+    height: 130px;
+}
+li {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+.socials ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.socials ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
