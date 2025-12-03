@@ -1,38 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
 
-    fetch('https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/optagelsesdata.json')
-        .then(response => response.json())
-        .then(data => {
-const Datamatiker = document.querySelector("#datamatiker")
+// npm install express mysql2 cors // for at køre reqquire og cors
 
-          Datamatiker.addEventListener("click", function () {
-              console.log("button clicked")
-          })
+const express = require("express");
 
-            const ObjectData = data.Optagelsesdata[0];
+const mysql = require("mysql2");
 
-            // Ret stavefejl (Labels / Values)
-            const labels = ["Alder"];
-            const values = [Number(ObjectData.alder)];
-            const IndexData = ["id","køn","by"]
+const cors = require("cors");
 
+const {query} = require("express");
+const app = express();
 
+// Den lokale host vi brugte, for at querie direkte i webstorm, og få svaret ud i insomnia
+const port = 8080;
 
-            const ctx = document.querySelector('#chart').getContext('2d');
+app.use(cors());
+app.use(express.json())
 
-            new Chart(ctx, {
-                type: "bar",
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: `${ObjectData.uddannelse} (${ObjectData.by})`,
-                        data: values
-                    }]
-                },
-                options: {
-                    responsive: true
-                }
-            });
+// For at kunne connecte til GitHub skrev vi vores koder hver især i configurations. På den måde kunne vi connecte til MySQL og bruge queriesne
+const connection = mysql.createConnection({
+    host: process.env.DBHOST,
+    user: process.env.DBUSER,
+    password: process.env.DBPASSWORD,
+    database: process.env.DBDATABASE
+});
+// Fejlmeddelelser, sådan at vi bedre kunne vide, hvilken specifik fejl der var. Kilde: chatGPT.com
+connection.connect((err) => {
+    if (err) {
+        console.error("Fejl ved forbindelse til databasen:", err.message);
+        process.exit(1); // Stop serveren hvis der er fejl
+    } else {
+        console.log("Forbundet til MySQL databasen!");
 
+        app.listen(port, () => {
+            console.log(`Server kører på port ${port}`);
         });
+    }
 });
