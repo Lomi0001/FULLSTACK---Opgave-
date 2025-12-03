@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <img id="logo" src="logo.jpg" height="254" width="520"/>
+    <img id="logo" src="logo/svg/logo.jpg" height="254" width="520"/>
 
     <div>
         <nav>
@@ -26,17 +26,17 @@
         <ul>
             <li>
                 <a href="https://www.facebook.com/ErhvervsakademiKoebenhavn.dk" target="_blank">
-                    <img src="facebook.svg" alt="Facebook">
+                    <img src="logo/svg/facebook.svg" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/_ekdigital/" target="_blank">
-                    <img src="instagram.svg" alt="Instagram">
+                    <img src="logo/svg/instagram.svg" alt="Instagram">
                 </a>
             </li>
             <li>
                 <a href="mailto:ek@ek.dk" target="_blank">
-                    <img src="mail.svg" alt="Mail">
+                    <img src="logo/svg/mail.svg" alt="Mail">
                 </a>
             </li>
         </ul>
@@ -45,7 +45,14 @@
 <main>
     <section id="interaktiv">
         <div id="chartsektion">
-            <canvas id="chart" style="width:100%;max-width:800px"></canvas>
+            <ul>
+                <li>
+                    <canvas id="chart" style="width:100%;max-width:800px"></canvas>
+                </li>
+                <li>
+                    <canvas id="chart2" style="width:100%;max-width:800px"></canvas>
+                </li>
+            </ul>
         </div>
 
         <div id="aktive-knapper">
@@ -64,6 +71,6 @@
 
     </section>
 </main>
-<script src="fetch.js"></script>
+<script src="lønEfterUdd.js"></script>
 </body>
 </html>
