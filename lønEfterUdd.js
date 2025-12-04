@@ -29,10 +29,17 @@ db.connect((err) => {
         console.error("❌ Kunne ikke forbinde til MySQL:", err);
         return;
     }
+
+    console.log(process.env.DBHOST, process.env.DBUSER, process.env.DBPASSWORD, process.env.DBDATABASE);
+
     console.log("✅ Forbundet til MySQL database!");
 
     // Start server when DB is ready
-    app.listen(port, () => {
+    app.listen(port, (err) => {
+        if (err) {
+            console.error("❌ Server failed:", err);
+            return;
+        }
         console.log(`🚀 Server kører på port ${port}`);
     });
 });
