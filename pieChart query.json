@@ -1,10 +1,10 @@
 [
 	{
-		"køn" : Mand,
+		"køn" : "Mand",
 		"antal" : 447
 	},
 	{
-		"køn" : Kvinde,
+		"køn" : "Kvinde",
 		"antal" : 239
 	}
 ]
