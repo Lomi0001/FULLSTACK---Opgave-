@@ -1,4 +1,5 @@
 // Load environment variables
+/*
 require("dotenv").config();
 
 const express = require("express");
@@ -47,4 +48,4 @@ app.get("/tables", (req, res) => {
         if (err) return res.status(500).json({ error: err.message });
         res.json(results);
     });
-});
+});*/
