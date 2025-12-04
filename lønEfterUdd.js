@@ -18,11 +18,13 @@ app.use(express.json())
 
 // For at kunne connecte til GitHub skrev vi vores koder hver især i configurations. På den måde kunne vi connecte til MySQL og bruge queriesne
 const connection = mysql.createConnection({
-    host: process.env.DBHOST,
-    user: process.env.DBUSER,
-    password: process.env.DBPASSWORD,
-    database: process.env.DBDATABASE
+    host: "",
+    user: "",                 // eller den bruger du faktisk logger ind med
+    password: "", // din rigtige MySQL-adgangskode
+    database: ""           // eller hvad din database hedder
 });
+
+
 // Fejlmeddelelser, sådan at vi bedre kunne vide, hvilken specifik fejl der var. Kilde: chatGPT.com
 connection.connect((err) => {
     if (err) {
