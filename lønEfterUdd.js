@@ -50,8 +50,9 @@ app.get("/", (req, res) => {
 });
 
 // Example route to fetch data
-app.get("/data", (req, res) => {
-    db.query("SELECT * FROM salary_women", (err, results) => {
+app.get("/salary", (req, res) => {
+    db.query("SELECT sector, AVG(salary_2024) FROM salary_women WHERE sector = \"it\" UNION ALL SELECT job_name, salary_2024 FROM salary_women WHERE sector = \"other\"",
+        (err, results) => {
         if (err) return res.status(500).json({ error: err.message });
         res.json(results);
     });
