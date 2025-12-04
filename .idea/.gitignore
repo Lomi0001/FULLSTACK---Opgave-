@@ -7,4 +7,5 @@
 /dataSources/
 /dataSources.local.xml
 
-/Users/storm/Desktop/KEA - dokumenter/1. Semester/Porteføljeaflevering 6 - Fullstack/.env
+*.env
+*.env.local
