@@ -1,5 +1,5 @@
 // Load environment variables
-/*
+
 require("dotenv").config();
 
 const express = require("express");
@@ -7,7 +7,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Middleware
 app.use(cors());
@@ -43,9 +43,9 @@ app.get("/", (req, res) => {
 });
 
 // Example route to fetch data
-app.get("/tables", (req, res) => {
-    db.query("SHOW TABLES", (err, results) => {
+app.get("/data", (req, res) => {
+    db.query("SELECT * FROM salary_women", (err, results) => {
         if (err) return res.status(500).json({ error: err.message });
         res.json(results);
     });
-});*/
+});
