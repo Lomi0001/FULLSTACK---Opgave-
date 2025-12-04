@@ -42,8 +42,8 @@ app.get("/", (req, res) => {
 });
 
 // Example route to fetch data
-app.get("/data", (req, res) => {
-    db.query("SELECT * FROM your_table_name", (err, results) => {
+app.get("/tables", (req, res) => {
+    db.query("SHOW TABLES", (err, results) => {
         if (err) return res.status(500).json({ error: err.message });
         res.json(results);
     });
