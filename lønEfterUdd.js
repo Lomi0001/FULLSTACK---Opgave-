@@ -50,8 +50,8 @@ app.get("/", (req, res) => {
 });
 
 // Example route to fetch data
-app.get("/salary/if", (req, res) => {
-    db.query("SELECT sector, AVG(salary_2024) FROM salary_women WHERE sector = \"it\" UNION ALL SELECT job_name, salary_2024 FROM salary_women WHERE sector = \"other\"",
+app.get("/salary", (req, res) => {
+    db.query("SELECT sector, AVG(salary_2024) as Salary FROM salary_women WHERE sector = \"it\" UNION ALL SELECT job_name, salary_2024 FROM salary_women WHERE sector = \"other\"",
         (err, results) => {
         if (err) return res.status(500).json({ error: err.message });
         res.json(results);
@@ -59,7 +59,7 @@ app.get("/salary/if", (req, res) => {
 });
 
 app.get("/kon", (req, res) => {
-    db.query("SELECT count(`køn`),`køn` FROM optagelsesdata GROUP BY `køn`",
+    db.query("SELECT count(`køn`) as antal,`køn` FROM optagelsesdata GROUP BY `køn`",
         (err, results) => {
             if (err) return res.status(500).json({error: err.message});
             res.json(results);

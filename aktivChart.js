@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/aktivChart%20query.json')
+    fetch('http://localhost:4000/salary')
         .then(response => response.json())
         .then(data => {
 

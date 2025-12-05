@@ -1,37 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/pieChart%20query.json')
-        .then(response => response.json())
+    fetch('http://localhost:4000/kon')
+        .then(res => res.json())
         .then(data => {
-            console.log("Data fra fetch:", data);
 
-            // Arrays til Chart.js
-            const labels = data.map(item => item.køn);           // "Mand", "Kvinde"
-            const values = data.map(item => Number(item.antal)); // 447, 239
+            const labels = data.map(d => d.køn);
+            const values = data.map(d => Number(d.antal));
 
-            // Hent canvas (forudsat <canvas class="chart">)
-            const ctx = document.querySelector('.chart').getContext('2d');
-
-            new Chart(ctx, {
+            new Chart(document.querySelector('.chart'), {
                 type: 'pie',
                 data: {
-                    labels: labels,
+                    labels,
                     datasets: [{
                         data: values,
-                        backgroundColor: [
-                            "#457b9d",
-                            "#a4133c"
-                        ]
+                        backgroundColor: ["#457b9d", "#a4133c"]
                     }]
                 },
                 options: {
                     plugins: {
-                        legend: {
-                            position: 'bottom'
-                        },
-                        responsive: true
+                        legend: { display: false },
+                        datalabels: {
+                            color: "#fff",
+                            font: { weight: "bold", size: 14 },
+                            formatter: (v, ctx) => {
+                                const total = ctx.chart._metasets[0].total;
+                                const pct = Math.round((v / total) * 100);
+                                return `${ctx.chart.data.labels[ctx.dataIndex]}\n${pct}%`;
+                            }
+                        }
                     }
-                }
+                },
+                plugins: [ChartDataLabels]
             });
-        })
-        .catch(error => console.error("Fejl ved hentning af data:", error));
+        });
 });
