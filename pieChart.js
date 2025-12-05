@@ -16,11 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 data: {
                     labels: labels,
                     datasets: [{
-                        data: values
+                        data: values,
+                        backgroundColor: [
+                            "#457b9d",
+                            "#a4133c"
+                        ]
                     }]
                 },
                 options: {
-                    responsive: true
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        responsive: true
+                    }
                 }
             });
         })
