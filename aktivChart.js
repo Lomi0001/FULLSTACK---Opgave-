@@ -14,6 +14,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const ctx3 = document.querySelector('.dashboard').getContext('2d');
 
+
+            const forretningsservice = document.querySelector("#forretningsservice")
+            const kontorSekretaer = document.querySelector("#kontorSekretaer")
+            const omsorg = document.querySelector("#omsorg")
+            const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder")
+            const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik")
+            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg")
+            const sosuHjem = document.querySelector("#sosuHjem")
+            const boxarry = [
+                "forretningsservice",
+                "kontorSekretaer",
+                "omsorg",
+                "sygeplejeJordemoder",
+                "undervisningPaedagogik",
+                "sundhedsOmsorg",
+                "sosuHjem"
+            ];
+
+            function tjekCheckbox() {
+
+                for (let i = 0; i < boxarry.length; i++) {
+
+                    const box = document.getElementById(boxarry[i]);
+
+                    if (box.checked) {
+                        console.log(boxarry[i], "er TIL");
+                    } else {
+                        console.log(boxarry[i], "er FRA");
+                    }
+
+                }
+            }
+
+// Tilføj eventlistener til alle boxe
+            boxarry.forEach(id => {
+                const box = document.getElementById(id);
+                box.addEventListener("change", tjekCheckbox);
+            });
+
+
+
             new Chart(ctx3, {
                 type: 'bar',
                 data: {
