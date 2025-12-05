@@ -118,4 +118,36 @@ nav li:hover {
     justify-content: center;
 }
 
+#largePicture {
+    max-width: 100%;
+    max-height: 100%;
+    width: 2000px;
+    height: 1200px;
+    margin: 0 auto;
+}
 
+#containerForLargePictureAndText a {
+        position: absolute; /* Positions the link absolutely within the container */
+        top: 50%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for true centering */
+        color: black; /* Text color */
+        font-size: 2rem; /* Adjust as needed */
+        text-decoration: none; /* Removes underline */
+        padding: 10px 20px; /* Optional: Adds space ar  ound text */
+        border-radius: 5px; /* Optional: Rounds the corners */
+        z-index: 1; /* Ensures the link appears above the image */
+}
+
+#containerForLargePictureAndText h1 {
+    position: absolute; /* Positions the link absolutely within the container */
+    top: 15%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for true centering */
+    color: black; /* Text color */
+    font-size: 5rem; /* Adjust as needed */
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Optional: Adds space around text */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    z-index: 1; /* Ensures the link appears above the image */
+}
