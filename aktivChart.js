@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
 
+            // 1. IT ligger på index 0 i dit JSON (jf. screenshot)
+            const itRow = data[0];
+            const itLabel = itRow.sector;                // "It"
+            const itSalary = Number(itRow.Salary);       // "60988.5556" -> tal
+
+            // 2. Canvas til dashboard-chart
             const ctx3 = document.querySelector(".dashboard").getContext("2d");
 
+            // 3. Hent checkboxes
             const forretningsservice     = document.querySelector("#forretningsservice");
             const kontorSekretaer        = document.querySelector("#kontorSekretaer");
             const omsorg                 = document.querySelector("#omsorg");
@@ -25,7 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 sosuHjem
             ];
 
-            // Start med tom graf
+            // 4. Koble hver checkbox til et bestemt index i data
+            // Justér index, hvis rækkefølgen i JSON er anderledes
+            const sectorIndexMap = {
+                forretningsservice: 6,      // fx "Arbejde inden for forretningsservice, økonomi, ..."
+                kontorSekretaer:    1,      // "Almindeligt kontor- og kundeservicearbejde"
+                omsorg:             2,      // "Service- og salgsarbejde" eller anden du ønsker
+                sygeplejeJordemoder:3,      // "Arbejde inden for sundhedsområdet"
+                undervisningPaedagogik:4,   // "Undervisning og pædagogisk arbejde"
+                sundhedsOmsorg:     3,      // kan evt. pege på samme som ovenfor, tilpas efter behov
+                sosuHjem:           3       // samme her – tilpas efter dine ønsker
+            };
+
+            // 5. Opret chart én gang – starter tomt
             const chart = new Chart(ctx3, {
                 type: "bar",
                 data: {
@@ -33,7 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     datasets: [{
                         label: "Løn",
                         data: [],
-                        backgroundColor: ["#FB6376"]
+                        backgroundColor: [],
+
                     }]
                 },
                 options: {
@@ -41,36 +61,41 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // Funktion der opbygger labels + values ud fra checkede bokse
+            // 6. Funktion til at opbygge data når du klikker SUB
             function tjekCheckbox() {
-
                 const labels = [];
                 const values = [];
+                const colors = [];
 
-                // Gå alle checkbokse igennem
+                // IT altid først — GRØN søjle
+                labels.push(itLabel);
+                values.push(itSalary);
+                colors.push("#FB6376");  // rosa farve til IT
+
+                // Resten af checkboxes — ROSA søjler
                 for (let i = 0; i < boxarrey.length; i++) {
                     const checkbox = boxarrey[i];
 
                     if (checkbox.checked) {
-                        console.log(checkbox.id, "ER TIL");
+                        const index = sectorIndexMap[checkbox.id];
+                        const row = data[index];
 
-                        // Her bruger vi indexet i data til at hente Salary
-                        const salary = data[i].Salary;   // ret til data[i].salary hvis feltet er med lille s
-
-                        labels.push(checkbox.id);        // fx "forretningsservice"
-                        values.push(salary);             // fx 31000
-                    } else {
-                        console.log(checkbox.id, "ER FRA");
+                        labels.push(row.sector);
+                        values.push(Number(row.Salary));
+                        colors.push("#ff666666");   // rosa til alle andre
                     }
                 }
 
-                // Opdater chart med nye arrays
+                // Opdater chart
                 chart.data.labels = labels;
                 chart.data.datasets[0].data = values;
+                chart.data.datasets[0].backgroundColor = colors;
+
                 chart.update();
             }
 
-            // Knap click
+
+            // 7. Knyt SUB-knappen til funktionen
             BTN.addEventListener("click", tjekCheckbox);
         })
         .catch(error => console.error("Fejl ved hentning af data:", error));
