@@ -14,6 +14,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const ctx3 = document.querySelector('.dashboard').getContext('2d');
 
+
+            const forretningsservice = document.querySelector("#forretningsservice")
+            const kontorSekretaer = document.querySelector("#kontorSekretaer")
+            const omsorg = document.querySelector("#omsorg")
+            const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder")
+            const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik")
+            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg")
+            const sosuHjem = document.querySelector("#sosuHjem")
+
+
+
+
+            const BTN = document.querySelector("#SUB");
+
+            const boxarry = [
+                "forretningsservice",
+                "kontorSekretaer",
+                "omsorg",
+                "sygeplejeJordemoder",
+                "undervisningPaedagogik",
+                "sundhedsOmsorg",
+                "sosuHjem"
+            ];
+
+            BTN.addEventListener("click", function () {
+                tjekCheckbox();
+            });
+
+            function tjekCheckbox() {
+
+                for (let i = 0; i < boxarry.length; i++) {
+
+                    const id = boxarry[i];
+
+                    if (box.checked) {
+                        console.log(id, "ER TIL");
+                    } else {
+                        console.log(id, "ER FRA");
+                    }
+                }
+            }
+
+
             new Chart(ctx3, {
                 type: 'bar',
                 data: {
