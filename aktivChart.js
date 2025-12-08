@@ -1,30 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('http://localhost:4000/salary')
+    fetch("http://localhost:4000/salary")
         .then(response => response.json())
         .then(data => {
 
+            const ctx3 = document.querySelector(".dashboard").getContext("2d");
 
-            const labelsIt = data.map(item => item.sector);
-            const valuesIt = data.find(item => item.sector[0]);
-            console.log(valuesIt)
-
-            const labelsOther = data.map(item => item.sector);
-            const valuesOther = data.slice(item => item.Salary);
-            console.log(valuesOther)
-
-            const ctx3 = document.querySelector('.dashboard').getContext('2d');
-
-
-            const forretningsservice = document.querySelector("#forretningsservice")
-            const kontorSekretaer = document.querySelector("#kontorSekretaer")
-            const omsorg = document.querySelector("#omsorg")
-            const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder")
-            const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik")
-            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg")
-            const sosuHjem = document.querySelector("#sosuHjem")
-
-
-
+            const forretningsservice     = document.querySelector("#forretningsservice");
+            const kontorSekretaer        = document.querySelector("#kontorSekretaer");
+            const omsorg                 = document.querySelector("#omsorg");
+            const sygeplejeJordemoder    = document.querySelector("#sygeplejeJordemoder");
+            const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik");
+            const sundhedsOmsorg         = document.querySelector("#sundhedsOmsorg");
+            const sosuHjem               = document.querySelector("#sosuHjem");
 
             const BTN = document.querySelector("#SUB");
 
@@ -38,31 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 sosuHjem
             ];
 
-            BTN.addEventListener("click", function () {
-                tjekCheckbox();
-            });
-
-            function tjekCheckbox() {
-                for (let i = 0; i < boxarrey.length; i++) {
-                    const checkbox = boxarrey[i];
-
-                    if (checkbox.checked) {
-                        console.log(checkbox.id, "ER TIL");
-                        myChart.data.datasets[0].data[i] = valuesOther; // Sæt værdi til 1
-                    } else {
-                        console.log(checkbox.id, "ER FRA");
-                    }
-                }
-                myChart.update(); // Opdater chart
-            }
-
-
-           const myChart = new Chart(ctx3, {
-                type: 'bar',
+            // Start med tom graf
+            const chart = new Chart(ctx3, {
+                type: "bar",
                 data: {
-                    labels: labelsIt, labelsOther,
+                    labels: [],
                     datasets: [{
-                        data: valuesIt, valuesOther,
+                        label: "Løn",
+                        data: [],
                         backgroundColor: ["#FB6376"]
                     }]
                 },
@@ -70,6 +40,38 @@ document.addEventListener("DOMContentLoaded", () => {
                     responsive: true
                 }
             });
+
+            // Funktion der opbygger labels + values ud fra checkede bokse
+            function tjekCheckbox() {
+
+                const labels = [];
+                const values = [];
+
+                // Gå alle checkbokse igennem
+                for (let i = 0; i < boxarrey.length; i++) {
+                    const checkbox = boxarrey[i];
+
+                    if (checkbox.checked) {
+                        console.log(checkbox.id, "ER TIL");
+
+                        // Her bruger vi indexet i data til at hente Salary
+                        const salary = data[i].Salary;   // ret til data[i].salary hvis feltet er med lille s
+
+                        labels.push(checkbox.id);        // fx "forretningsservice"
+                        values.push(salary);             // fx 31000
+                    } else {
+                        console.log(checkbox.id, "ER FRA");
+                    }
+                }
+
+                // Opdater chart med nye arrays
+                chart.data.labels = labels;
+                chart.data.datasets[0].data = values;
+                chart.update();
+            }
+
+            // Knap click
+            BTN.addEventListener("click", tjekCheckbox);
         })
         .catch(error => console.error("Fejl ved hentning af data:", error));
-})
+});
