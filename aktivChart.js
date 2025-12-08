@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const BTN = document.querySelector("#SUB");
 
-            const boxarry = [
+            const boxarrey = [
                 "forretningsservice",
                 "kontorSekretaer",
                 "omsorg",
@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             function tjekCheckbox() {
 
-                for (let i = 0; i < boxarry.length; i++) {
+                for (let i = 0; i < boxarrey.length; i++) {
 
-                    const id = boxarry[i];
+                    const id = boxarrey[i];
 
-                    if (box.checked) {
+                    if (boxarrey.checked) {
                         console.log(id, "ER TIL");
                     } else {
                         console.log(id, "ER FRA");
