@@ -30,7 +30,7 @@ db.connect((err) => {
         return;
     }
 
-    console.log(process.env.DBHOST, process.env.DBUSER, process.env.DBPASSWORD, process.env.DBDATABASE);
+
 
     console.log("✅ Forbundet til MySQL database!");
 

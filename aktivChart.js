@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(valuesIt)
 
             const labelsOther = data.map(item => item.sector);
-            const valuesOther = data.slice(item => item[2]);
+            const valuesOther = data.slice(item => item.Salary);
             console.log(valuesOther)
 
             const ctx3 = document.querySelector('.dashboard').getContext('2d');
@@ -44,20 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
             function tjekCheckbox() {
                 for (let i = 0; i < boxarrey.length; i++) {
-                    const checkbox = boxarrey[i]; // her antager jeg, at boxarrey indeholder elementer
+                    const checkbox = boxarrey[i];
 
                     if (checkbox.checked) {
                         console.log(checkbox.id, "ER TIL");
+                        myChart.data.datasets[0].data[i] = valuesOther; // Sæt værdi til 1
                     } else {
                         console.log(checkbox.id, "ER FRA");
                     }
                 }
+                myChart.update(); // Opdater chart
             }
 
 
-
-
-            new Chart(ctx3, {
+           const myChart = new Chart(ctx3, {
                 type: 'bar',
                 data: {
                     labels: labelsIt, labelsOther,
