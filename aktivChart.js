@@ -62,8 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 data: {
                     labels: labelsIt, labelsOther,
                     datasets: [{
-                        data: valuesIt, valuesOther,
-                        backgroundColor: ["#FB6376"]
+                        data: valuesIt, valuesOther
                     }]
                 },
                 options: {
