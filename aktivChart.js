@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const BTN = document.querySelector("#SUB");
 
             const boxarrey = [
-                "forretningsservice",
-                "kontorSekretaer",
-                "omsorg",
-                "sygeplejeJordemoder",
-                "undervisningPaedagogik",
-                "sundhedsOmsorg",
-                "sosuHjem"
+                forretningsservice,
+                kontorSekretaer,
+                omsorg,
+                sygeplejeJordemoder,
+                undervisningPaedagogik,
+                sundhedsOmsorg,
+                sosuHjem
             ];
 
             BTN.addEventListener("click", function () {
@@ -43,18 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             function tjekCheckbox() {
-
                 for (let i = 0; i < boxarrey.length; i++) {
+                    const checkbox = boxarrey[i]; // her antager jeg, at boxarrey indeholder elementer
 
-                    const id = boxarrey[i];
-
-                    if (boxarrey.checked) {
-                        console.log(id, "ER TIL");
+                    if (checkbox.checked) {
+                        console.log(checkbox.id, "ER TIL");
                     } else {
-                        console.log(id, "ER FRA");
+                        console.log(checkbox.id, "ER FRA");
                     }
                 }
             }
+
+
 
 
             new Chart(ctx3, {
