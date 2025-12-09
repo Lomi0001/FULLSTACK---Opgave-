@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             grid: {
                                 display: false
                             }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            }
                         }
 
                     }
