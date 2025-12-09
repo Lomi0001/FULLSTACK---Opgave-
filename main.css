@@ -171,6 +171,27 @@ nav li:hover {
     padding: 8px;
 
 }
+/* INFO Knap */
+.dropdown-btn {
+    padding: 2px 4px;
+    font-size: 0.75rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.dropdown-content p{
+    padding-right: 80px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
 
 
 
