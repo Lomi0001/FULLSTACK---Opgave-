@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const ctx3 = document.querySelector(".dashboard").getContext("2d");
 
             // 3. Hent checkboxes
-            const forretningsservice     = document.querySelector("#forretningsservice");
-            const kontorSekretaer        = document.querySelector("#kontorSekretaer");
-            const detail                 = document.querySelector("#detail");
-            const sygeplejeJordemoder    = document.querySelector("#sygeplejeJordemoder");
+            const forretningsservice = document.querySelector("#forretningsservice");
+            const kontorSekretaer = document.querySelector("#kontorSekretaer");
+            const detail = document.querySelector("#detail");
+            const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder");
             const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik");
-            const sundhedsOmsorg         = document.querySelector("#sundhedsOmsorg");
-            const sosuHjem               = document.querySelector("#sosuHjem");
+            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg");
+            const sosuHjem = document.querySelector("#sosuHjem");
 
             const BTN = document.querySelector("#SUB");
 
@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
             // Justér index, hvis rækkefølgen i JSON er anderledes
             const sectorIndexMap = {
                 forretningsservice: 6,      // fx "Arbejde inden for forretningsservice, økonomi, ..."
-                kontorSekretaer:    1,      // "Almindeligt kontor- og kundeservicearbejde"
-                detail:             2,      // "Service- og salgsarbejde" eller anden du ønsker
-                sygeplejeJordemoder:9,      // "Arbejde inden for sundhedsområdet"
-                undervisningPaedagogik:4,   // "Undervisning og pædagogisk arbejde"
-                sundhedsOmsorg:     8,      // kan evt. pege på samme som ovenfor, tilpas efter behov
-                sosuHjem:           11       // samme her – tilpas efter dine ønsker
+                kontorSekretaer: 1,      // "Almindeligt kontor- og kundeservicearbejde"
+                detail: 2,      // "Service- og salgsarbejde" eller anden du ønsker
+                sygeplejeJordemoder: 9,      // "Arbejde inden for sundhedsområdet"
+                undervisningPaedagogik: 4,   // "Undervisning og pædagogisk arbejde"
+                sundhedsOmsorg: 8,      // kan evt. pege på samme som ovenfor, tilpas efter behov
+                sosuHjem: 11       // samme her – tilpas efter dine ønsker
             };
 
             // 5. Opret chart én gang – starter tomt
@@ -57,7 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     }]
                 },
                 options: {
-                    responsive: true
+                    responsive: true,
+
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+
+                    }
+
+
                 }
             });
 
