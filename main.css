@@ -107,6 +107,119 @@ nav li:hover {
 }
 
 
+/*Intro tekst */
+.intro h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #FB6376;
+    padding-top: 180px;
+}
+
+.intro-fylde p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 130px;
+    padding-left: 130px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+
+/*Intro billeder*/
+.intro-billeder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+
+/* Første billede - venstre, fuld højde */
+.billede-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.billede-1:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Andet billede - top midten */
+.billede-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.billede-2:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Tredje billede - bund midten */
+.billede-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.billede-3:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Fjerde billede - højre, fuld højde */
+.billede-4 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.billede-4:hover {
+    transform: scale(1.05);
+}
+
+
+
+.billede-5 {
+    grid-column: 1 / 3; /* Spænder over 2 kolonner */
+    grid-row: 3 / 4;
+}
+
+.billede-5:hover {
+    transform: scale(1.05);
+}
+
+
+
+.billede-6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.billede-6:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Sørg for at billederne fylder containeren */
+.intro-billeder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
 /*Chart sektion med knapper */
 
 .twoContainer{
@@ -270,4 +383,9 @@ nav li:hover {
 
 #SUB:hover {
     transform: scale(0.98);
+}
+
+
+#ytVideo {
+    
 }
