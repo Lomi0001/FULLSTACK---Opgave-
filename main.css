@@ -175,8 +175,6 @@ nav li:hover {
 
 
 
-
-
 #datamatiker1 {
     background-color: rgb(154,138,120);
 }
@@ -237,4 +235,18 @@ nav li:hover {
 }
 .right-container p {
     color: white;
+}
+
+
+#SUB {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #FB6376;
+    font-weight: 550;
+    border-color: #FB6376;
+}
+
+#SUB:hover {
+    transform: scale(0.98);
 }
