@@ -196,7 +196,17 @@ nav li:hover {
 
 #animationScroll{
     color: #FB6376;
-    font-size: 5rem;
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#animationScroll p {
+    color: #FB6376;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -204,6 +214,17 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
+    color: white;
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#animationScroll1 p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #animationScroll1.appear {
@@ -211,13 +232,9 @@ nav li:hover {
     transform: translateY(0);
 }
 
-#animationScroll1{
-    color: white;
-    font-size: 5rem;
-}
 .right-container h1 {
         color: #FB6376;
 }
-.right-container a {
+.right-container p {
     color: white;
 }
