@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // 3. Hent checkboxes
             const forretningsservice     = document.querySelector("#forretningsservice");
             const kontorSekretaer        = document.querySelector("#kontorSekretaer");
-            const omsorg                 = document.querySelector("#omsorg");
+            const detail                 = document.querySelector("#detail");
             const sygeplejeJordemoder    = document.querySelector("#sygeplejeJordemoder");
             const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik");
             const sundhedsOmsorg         = document.querySelector("#sundhedsOmsorg");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const boxarrey = [
                 forretningsservice,
                 kontorSekretaer,
-                omsorg,
+                detail,
                 sygeplejeJordemoder,
                 undervisningPaedagogik,
                 sundhedsOmsorg,
@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const sectorIndexMap = {
                 forretningsservice: 6,      // fx "Arbejde inden for forretningsservice, økonomi, ..."
                 kontorSekretaer:    1,      // "Almindeligt kontor- og kundeservicearbejde"
-                omsorg:             2,      // "Service- og salgsarbejde" eller anden du ønsker
-                sygeplejeJordemoder:3,      // "Arbejde inden for sundhedsområdet"
+                detail:             2,      // "Service- og salgsarbejde" eller anden du ønsker
+                sygeplejeJordemoder:9,      // "Arbejde inden for sundhedsområdet"
                 undervisningPaedagogik:4,   // "Undervisning og pædagogisk arbejde"
-                sundhedsOmsorg:     3,      // kan evt. pege på samme som ovenfor, tilpas efter behov
-                sosuHjem:           3       // samme her – tilpas efter dine ønsker
+                sundhedsOmsorg:     8,      // kan evt. pege på samme som ovenfor, tilpas efter behov
+                sosuHjem:           11       // samme her – tilpas efter dine ønsker
             };
 
             // 5. Opret chart én gang – starter tomt
