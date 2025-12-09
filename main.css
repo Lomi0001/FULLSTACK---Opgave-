@@ -12,7 +12,7 @@ header{
     background-color: rgb(38,38,38);
     z-index: 2;
 }
-header img {
+#logo {
     display: flex;
     justify-content: center;
     align-items: center;
