@@ -1,5 +1,5 @@
 body{
-    font-family: AppleMyungjo;
+    font-family: "Crimson Text", serif;
     background-color: rgb(38,38,38);
     margin: 0;
 }
@@ -99,6 +99,7 @@ nav li:hover {
     left: 25%; /* Centers horizontally */
     transform: translate(-50%, -50%); /* Adjusts for true centering */
     font-size: 4rem; /* Adjust as needed */
+    font-family: AppleMyungjo;
     text-decoration: none; /* Removes underline */
     padding: 10px 20px; /* Optional: Adds space around text */
     border-radius: 5px; /* Optional: Rounds the corners */
