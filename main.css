@@ -43,7 +43,12 @@ li {
     display: flex;
     justify-content: space-evenly;
     color: rgb(154,138,120);
-
+}
+li a{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(154,138,120);
+    text-decoration: none;
 }
 
 .socials ul{
@@ -207,6 +212,12 @@ nav li:hover {
 }
 
 #animationScroll1{
-    color: #FB6376;
+    color: white;
     font-size: 5rem;
+}
+.right-container h1 {
+        color: #FB6376;
+}
+.right-container a {
+    color: white;
 }
