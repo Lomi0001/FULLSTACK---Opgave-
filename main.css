@@ -16,6 +16,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 225px;
+    height: 80px;
 }
 header div{
     flex: 1;
@@ -30,25 +36,22 @@ header .socials{
     align-items: center;
 }
 
-#logo{
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 225px;
-    height: 80px;
-}
 
 li {
     display: flex;
     justify-content: space-evenly;
-    color: rgb(154,138,120);
+    color: white;
 }
 li a{
     display: flex;
     justify-content: space-evenly;
-    color: rgb(154,138,120);
+    color: white;
     text-decoration: none;
+}
+
+#articleLogo {
+    height: 30px;
+    background-color: white;
 }
 
 .socials ul{
@@ -149,7 +152,7 @@ nav li:hover {
 }
 
 .billede-1:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -161,7 +164,7 @@ nav li:hover {
 }
 
 .billede-2:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -173,7 +176,7 @@ nav li:hover {
 }
 
 .billede-3:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -185,7 +188,7 @@ nav li:hover {
 }
 
 .billede-4:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -196,7 +199,7 @@ nav li:hover {
 }
 
 .billede-5:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -207,7 +210,7 @@ nav li:hover {
 }
 
 .billede-6:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
