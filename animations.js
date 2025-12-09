@@ -14,3 +14,4 @@ const observer = new IntersectionObserver((entries) => {
 // Start observing the elements
 observer.observe(scrollAnimation);
 observer.observe(scrollAnimation1);
+
