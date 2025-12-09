@@ -405,7 +405,23 @@ nav li:hover {
     transform: scale(0.98);
 }
 
+.dropdown {
+    position: relative; /* Gør dropdown til reference-punkt */
+}
 
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    width: fit-content;
+    max-width: 90vw;
+}
 #ytVideo {
     
 }
