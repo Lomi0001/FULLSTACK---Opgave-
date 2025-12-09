@@ -40,18 +40,13 @@ header .socials{
 li {
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color:rgb(154,138,120);
 }
 li a{
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(154,138,120);
     text-decoration: none;
-}
-
-#articleLogo {
-    height: 30px;
-    background-color: white;
 }
 
 .socials ul{
