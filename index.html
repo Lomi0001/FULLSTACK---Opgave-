@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="main.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
     <title>WIT</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <!--- Header-->
 <header>
-        <a href="index.html">
-            <img id="logo" src="logo/svg/wit%20charchoal.jpg" alt="logo"/>
-        </a>
+    <a href="index.html">
+        <img id="logo" src="logo/svg/wit%20charchoal.jpg" alt="logo"/>
+    </a>
     <div>
         <nav>
             <ul>
@@ -78,30 +79,56 @@
 
     <section>
         <div class="intro-billeder">
-            <div class="billede-1"><img src="logo/KEA_Guldbergsgade_01 (1).jpg" alt="Billede af EK" title="Billede af EK"></div>
-                <div class="billede-2"><img src="logo/ITU.jpg" alt="Billede af ITU" title="Billede af ITU"></div>
-                    <div class="billede-3"><img src="logo/DTU .jpg" alt="Billede af DTU" title="Billede af DTU"></div>
-                    <div class="billede-4"><img src="logo/KU.jpg" alt="Billede af KU" title="Billede af KU"></div>
-                    <div class="billede-5"><img src="logo/Aalborg Universitet.jpg" alt="Billede af Aalborg Universitet" title="Billede af Aalborg Universiet"></div>
-                    <div class="billede-6"><img src="logo/Aarhus universitet .jpg"  alt="Aarhus Universitet" title="Billede af Aarhus Universitet"></div>
-                    </div>
+            <div class="billede-1"><img src="logo/KEA_Guldbergsgade_01 (1).jpg" alt="Billede af EK"
+                                        title="Billede af EK"></div>
+            <div class="billede-2"><img src="logo/ITU.jpg" alt="Billede af ITU" title="Billede af ITU"></div>
+            <div class="billede-3"><img src="logo/DTU .jpg" alt="Billede af DTU" title="Billede af DTU"></div>
+            <div class="billede-4"><img src="logo/KU.jpg" alt="Billede af KU" title="Billede af KU"></div>
+            <div class="billede-5"><img src="logo/Aalborg Universitet.jpg" alt="Billede af Aalborg Universitet"
+                                        title="Billede af Aalborg Universiet"></div>
+            <div class="billede-6"><img src="logo/Aarhus universitet .jpg" alt="Aarhus Universitet"
+                                        title="Billede af Aarhus Universitet"></div>
+        </div>
     </section>
 
     <!-- container 2-->
+    <section class="pie-chart-header">
+            <h1>Fordeling af køn på IT</h1>
+    </section>
+
     <section class="twoContainer">
-        <div class="left-container">
-            <ul>
-                <li>
-                    <canvas class="chart" style="width:100%;max-width:800px"></canvas>
-                </li>
-            </ul>
+            <div class="pie-chart">
+                <ul>
+                    <li>
+                        <canvas class="chart" style="width:100%;max-width:800px"></canvas>
+                    </li>
+                </ul>
         </div>
 
         <div class="right-container">
             <ul>
                 <li>
-                    <p>
+                    <h1>Fordelingen af Køn på It-Uddannelser</h1>
+                </li>
 
+                <li>
+
+                    <p>
+                        Som det ser ud nu, er fordelingen på de danske it-uddannelser <span style="color: #FB6376">35 % kvinder</span>
+                        og 65 % mænd. Det er
+                        en fremgang sammenlignet med tidligere år, men udviklingen går stadig langsomt, og ubalancen er
+                        tydelig.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Det betyder, at Danmark i dag går glip af en stor del af det digitale talent, der kunne være med
+                        til at forme fremtidens teknologiske løsninger. Skal vi som land følge med udviklingen, er det
+                        nødvendigt at rekruttere bredere – og her er kvinder en helt central del af svaret.
+                        Når flere kvinder vælger en it-uddannelse, får branchen ikke kun mere balance. Den får også
+                        adgang til nye perspektiver, stærkere teamwork og mere innovative løsninger. Mangfoldighed
+                        skaber bedre resultater, og derfor er det afgørende, at flere kvinder ser it som en reel og
+                        attraktiv karrierevej.
                     </p>
                 </li>
 
@@ -156,10 +183,10 @@
                     </label>
                 </li>
                 <li>
-                   <button id="SUB">Vis resultater</button>
+                    <button id="SUB">Vis resultater</button>
                 </li>
                 <div class="dropdown">
-                    <button class="dropdown-btn">Bag om grafen</button>
+                    <button class="dropdown-btn">Bag om grafen <span style="font-size: 12px">▼</span></button>
 
                     <div class="dropdown-content">
                         <p>
@@ -191,28 +218,38 @@
     <!-- container 4-->
 
     <section class="twoContainer">
-        <div  class="left-container">
-            <p id="animationScroll" >2,6<br> <span style="font-size: 2rem"> år tager en gennemsnitlig <br>it-uddannelse </span></p>
+        <div class="left-container">
+            <p id="animationScroll">2,6<br> <span style="font-size: 2rem"> år tager en gennemsnitlig <br>it-uddannelse </span>
+            </p>
         </div>
-        <div  class="left-container">
-            <p id="animationScroll1" >3,5<br><span style="font-size: 2rem"> år er gennemsnittet i dk <br>for uddannelser</span></p>
+        <div class="left-container">
+            <p id="animationScroll1">3,5<br><span style="font-size: 2rem"> år er gennemsnittet i dk <br>for uddannelser</span>
+            </p>
         </div>
         <div class="right-container">
             <h1>Gennemsnit af hvor lang tid de forskellige uddannelser tager</h1>
             <p>
-                It-branchen er i konstant udvikling, og behovet for kvalificerede it-fagfolk er større end nogensinde. Uanset om du drømmer om at blive softwareudvikler, it-sikkerhedsekspert, datalog eller noget helt tredje, findes der en it-uddannelse, der passer til dine mål og tidsrammer.
+                It-branchen er i konstant udvikling, og behovet for kvalificerede it-fagfolk er større end nogensinde.
+                Uanset om du drømmer om at blive softwareudvikler, it-sikkerhedsekspert, datalog eller noget helt
+                tredje, findes der en it-uddannelse, der passer til dine mål og tidsrammer.
                 Her er et overblik over, hvor lang tid de mest populære it-uddannelser typisk tager:
 
                 <br>
 
                 Korte uddannelser (6 måneder – 2 år):
-                Disse uddannelser er ideelle, hvis du hurtigt vil i gang med en karriere inden for it. Eksempler inkluderer it-supporter, webudvikler eller certificeringer inden for cloud-teknologi. De giver dig praktiske færdigheder og en direkte vej til jobmarkedet.
+                Disse uddannelser er ideelle, hvis du hurtigt vil i gang med en karriere inden for it. Eksempler
+                inkluderer it-supporter, webudvikler eller certificeringer inden for cloud-teknologi. De giver dig
+                praktiske færdigheder og en direkte vej til jobmarkedet.
                 <br>
                 Mellem-lange uddannelser (2 – 3 år):
-                Her finder du uddannelser som datamatiker, multimediedesigner eller it-arkitekt. Disse uddannelser kombinerer teori og praksis og åbner døre til specialiserede roller inden for softwareudvikling, systemadministration og digital design.
+                Her finder du uddannelser som datamatiker, multimediedesigner eller it-arkitekt. Disse uddannelser
+                kombinerer teori og praksis og åbner døre til specialiserede roller inden for softwareudvikling,
+                systemadministration og digital design.
                 <br>
                 Lange uddannelser (3 – 5 år):
-                Hvis du ønsker en dybere forståelse af it og mulighed for at arbejde med avancerede teknologier, er en bachelor- eller kandidatuddannelse i datalogi, software engineering eller cybersecurity det rette valg. Disse uddannelser giver dig adgang til forskning, ledelse og specialiserede roller i store virksomheder.
+                Hvis du ønsker en dybere forståelse af it og mulighed for at arbejde med avancerede teknologier, er en
+                bachelor- eller kandidatuddannelse i datalogi, software engineering eller cybersecurity det rette valg.
+                Disse uddannelser giver dig adgang til forskning, ledelse og specialiserede roller i store virksomheder.
             </p>
         </div>
     </section>
@@ -233,7 +270,10 @@
             </ul>
         </div>
         <div class="grey-container">
-            <iframe id="ytVideo" width="760" height="415" src="https://www.youtube.com/embed/Wt63Tjb1vhk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe id="ytVideo" width="760" height="415" src="https://www.youtube.com/embed/Wt63Tjb1vhk?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
 
