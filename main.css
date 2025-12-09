@@ -220,23 +220,8 @@ nav li:hover {
     border-radius: 4px;
 }
 
-.pie-chart-header h1 {
-    display: flex;
-    color: #FB6376;
-    justify-content: center;
-    margin-top: 120px;
-    font-size: 50px;
-}
+
 /*Chart sektion med knapper */
-
-.pie-chart {
-    display: flex;
-    justify-content: center;
-    height: 700px;
-    margin-left: 100px;
-    margin-top: 100px;
-}
-
 
 .twoContainer{
     display: flex;
@@ -410,17 +395,3 @@ nav li:hover {
 #ytVideo {
     
 }
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-        position: absolute;
-        background: white;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        text-align: center;
-        padding: 15px 20px;
-        width: auto;
-        max-width: 90vw;
-    }
