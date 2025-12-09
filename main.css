@@ -107,6 +107,7 @@ nav li:hover {
 .twoContainer{
     display: flex;
     justify-content: center;
+    height: 750px;
 
 }
 
@@ -133,6 +134,7 @@ nav li:hover {
     flex-direction: column;
     padding-right: 20px;
     background-color: white;
+    height: 750px;
 }
 .right-container button{
     background-color: white;
@@ -148,6 +150,26 @@ nav li:hover {
     justify-content: center;
 }
 
+/* Selve listen */
+.filter-list {
+    margin: 0;
+    margin-left: 100px;
+
+
+}
+
+/* Hvert punkt i listen */
+.filter-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;  /* Første kolonne: checkbox, anden: tekst */
+    align-items: flex-start;
+    padding: 8px;
+
+}
+
+
+
+
 
 
 #datamatiker1 {
@@ -158,6 +180,7 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
+
 }
 
 #animationScroll.appear {
