@@ -44,6 +44,12 @@ li {
     justify-content: space-evenly;
     color: rgb(154,138,120);
 }
+li a{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(154,138,120);
+    text-decoration: none;
+}
 
 .socials ul{
     display: flex;
