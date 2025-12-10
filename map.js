@@ -36,7 +36,12 @@ itCampusArray.forEach(function(campus) {
 
     L.marker([lat, lng], { icon: gavoIcon })
         .addTo(map)
-        .bindPopup(`${campus.Name}`);
+        .bindPopup(`
+    <b>${campus.name}</b><br>
+    <a>${campus.adress}</a> <br>
+    <a href="${campus.link}" target="_blank">Besøg hjemmeside</a>
+`);
+    
 });
 
 // Evt. ekstra marker med samme ikon
