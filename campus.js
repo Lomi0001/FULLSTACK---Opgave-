@@ -1,5 +1,5 @@
 const itCampus = {
-    sheet1: [
+    Sheet1: [
         {
             navn: "EK Guldbergsgade",
             adress: "Guldbergsgade 29N, 2200 København",
@@ -120,5 +120,5 @@ const itCampus = {
             link: "https://www.easv.dk/da/",
             "lat, lng": "55.48779232748624, 8.446921534350736",
         },
-    ]
-}
+    ],
+};
