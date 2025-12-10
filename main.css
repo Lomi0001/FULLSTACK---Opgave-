@@ -651,4 +651,17 @@ nav li:hover {
 }
 
 
+.map-of-campus {
+    width: 79%;      /* halvdelen af siden */
+    margin-left: 150px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+}
+
+#map {
+    width: 100%;     /* fyld hele .map-of-campus-bredden */
+    height: 600px;   /* eller hvad du ønsker */
+}
+
+
 
