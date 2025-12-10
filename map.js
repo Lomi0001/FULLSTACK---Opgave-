@@ -1,9 +1,7 @@
 console.log(itCampus);
 
 const itCampusArray = itCampus.Sheet1;
-console.log(itCampusArray)
-
-const latlng = [];
+console.log(itCampusArray);
 
 // Opret kortet én gang
 var map = L.map('map').setView([56.261095, 10.797427], 7);
@@ -15,13 +13,20 @@ map.on('click', function () {
     map.scrollWheelZoom.enable();
 });
 
-
 // Leaflet tiles
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Markers
+// Definér dit custom SVG-ikon
+const gavoIcon = L.icon({
+    iconUrl: "https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/main/logo/location-pin-svgrepo-com.svg",
+    iconSize: [40, 40],     // justér hvis det virker for stort/lille
+    iconAnchor: [20, 40],   // nederste midte = "spidsen"
+    popupAnchor: [0, -40]   // popup lige over ikonet
+});
+
+// Markers – nu med dit ikon
 itCampusArray.forEach(function(campus) {
     const latlngIndividual = campus['lat, lng'];
     const latlngIndividualArray = latlngIndividual.split(", ");
@@ -29,6 +34,10 @@ itCampusArray.forEach(function(campus) {
     const lat = parseFloat(latlngIndividualArray[0]);
     const lng = parseFloat(latlngIndividualArray[1]);
 
-    L.marker([lat, lng]).addTo(map)
+    L.marker([lat, lng], { icon: gavoIcon })
+        .addTo(map)
         .bindPopup(`${campus.Name}`);
 });
+
+// Evt. ekstra marker med samme ikon
+L.marker([55.6761, 12.5683], { icon: gavoIcon }).addTo(map);
