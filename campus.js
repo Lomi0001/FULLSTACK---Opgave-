@@ -1,0 +1,124 @@
+const itCampus = {
+    sheet1: [
+        {
+            navn: "EK Guldbergsgade",
+            adress: "Guldbergsgade 29N, 2200 København",
+            link: "https://www.ek.dk/videregaaende-uddannelser/ek-guldbergsgade",
+            "lat, lng": "55.691724392423154, 12.554667520785936",
+        },
+        {
+            navn: "Erhvervsakademi Aarhus",
+            adress: "Sønderhøj 30, 8260 Viby J",
+            link: "https://www.eaaa.dk/efteruddannelse-og-kurser/vaelg-efter-interesse/it-og-digital-udvikling/",
+            "lat, lng": "56.119742951149064, 10.158971272622644",
+        },
+        {
+            navn: "ITU København",
+            adress: "Rued Langgaards Vej 7, 2300 København",
+            link: "https://itu.dk/",
+            "lat, lng": "55.65982558742865, 12.591129673406249",
+        },
+        {
+            navn: "Aarhus Universitet",
+            adress: "Finlandsgade 22, 8200 Aarhus",
+            link: "https://www.au.dk/",
+            "lat, lng": "56.172039157805244, 10.191721363035196",
+        },
+        {
+            navn: "Aalborg Universitet",
+            adress: "Fredrik Bajers Vej 7K, 9220 Aalborg Øst",
+            link: "https://www.aau.dk/uddannelser",
+            "lat, lng": "57.016805994311504, 9.982507544030888",
+        },
+        {
+            navn: "Københavns Universitet",
+            adress: "Nørregade 10, 1172 København",
+            link: "https://www.ku.dk/",
+            "lat, lng": "55.68038752028242, 12.572452525496242",
+        },
+        {
+            navn: "Danmarks Tekniske Universitet Lyngby",
+            adress: "Anker Engelunds Vej 1, Bygning 101A, 2800 Kongens Lyngby",
+            link: "https://www.dtu.dk/om-dtu/kontakt-og-besoeg/find-vej/dtu-lyngby-campus",
+            "lat, lng": "55.78622609326171, 12.523380539994509",
+        },
+        {
+            navn: "Danmarks Tekniske Universitet Ballerup",
+            adress: "Lautrupvang 15, 2750 Ballerup",
+            link: "https://www.dtu.dk/om-dtu/kontakt-og-besoeg/find-vej/dtu-ballerup-campus",
+            "lat, lng": "55.731536591365575, 12.396220995380261",
+        },
+        {
+            navn: "Copenhagen Business School",
+            adress: "Solbjerg Pl. 3, 2000 Frederiksberg",
+            link: "https://www.cbs.dk/",
+            "lat, lng": "55.68164378096749, 12.529694404675508",
+        },
+        {
+            navn: "Syddansk Universitet Odense",
+            adress: "Campusvej 55, 5230 Odense",
+            link: "https://www.sdu.dk/da/uddannelse/studiebyer/odense",
+            "lat, lng": "55.39285362341055, 10.436121028314963",
+        },
+        {
+            navn: "Syddansk Universitet Vejle",
+            adress: "Boulevarden 36, 7100 Vejle",
+            link: "https://www.sdu.dk/da/uddannelse/studiebyer/vejle",
+            "lat, lng": "55.71183444732352, 9.521190614152651",
+        },
+        {
+            navn: "Syddansk Universitet Kolding",
+            adress: "Universitetsparken 1, 6000 Kolding",
+            link: "https://www.sdu.dk/da/uddannelse/studiebyer/kolding",
+            "lat, lng": "55.48726216787341, 9.483043868473516",
+        },
+        {
+            navn: "UCN Aalborg Sofieendalsvej",
+            adress: "Sofiendalsvej 60, 9200 Aalborg",
+            link: "https://www.ucn.dk/",
+            "lat, lng": "57.021004008628886, 9.884755578294987",
+        },
+        {
+            navn: "UCN Aalborg Selma Lagerløfs Vej",
+            adress: "Selma Lagerløfs Vej 2, 9220 Aalborg Øst",
+            link: "https://www.ucn.dk/",
+            "lat, lng": "57.01644766124642, 9.993419209865714",
+        },
+        {
+            navn: "Aalborg Universitet København",
+            adress: "A. C. Meyers Vænge 15, 2450 København",
+            link: "https://www.aau.dk/koebenhavn",
+            "lat, lng": "55.65101479263632, 12.5419119391768",
+        },
+        {
+            navn: "Syddansk Universitet Sønderborg",
+            adress: "Alsion 2, 6400 Sønderborg",
+            link: "https://www.sdu.dk/da/om-sdu/sdu-campusser/soenderborg",
+            "lat, lng": "54.91432862047843, 9.778721123260846",
+        },
+        {
+            navn: "Aarhus Universitet Herning",
+            adress: "Birk Centerpark 15, 7400 Herning",
+            link: "https://btech.au.dk/",
+            "lat, lng": "56.12945119483808, 9.026716906031396",
+        },
+        {
+            navn: "EK lygten",
+            adress: "Lygten 16, 2400 København NV",
+            link: "https://www.ek.dk/om-os/organisation/ek-lygten",
+            "lat, lng": "55.70656036213765, 12.539212484396195",
+        },
+        {
+            navn: "UCL Business & Design Academy Odense",
+            adress: "Seebladsgade 1, 5000 Odense",
+            link: "https://www.ucl.dk/",
+            "lat, lng": "55.405101806510196, 10.379611823850125",
+        },
+        {
+            navn: "Erhvervsakademi SydVest",
+            adress: "Erhvervsakademi Sydvest, Spangsbjerg Kirkevej 103, 6700 Esbjerg",
+            link: "https://www.easv.dk/da/",
+            "lat, lng": "55.48779232748624, 8.446921534350736",
+        },
+    ]
+}
