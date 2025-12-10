@@ -435,7 +435,7 @@ nav li:hover {
     position: absolute;
     top: 100%;
     background: white;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -444,6 +444,8 @@ nav li:hover {
     width: fit-content;
     max-width: 90vw;
 }
+
+
 #ytVideo {
     
 }
