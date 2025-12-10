@@ -94,7 +94,11 @@ nav ul{
 nav li:hover {
     transform: scale(1.3);
 }
-/* billede før charts */
+
+/*_______________________________________________________________________________________*/
+/*                                       forside billede                                 */
+/*_______________________________________________________________________________________*/
+
 #largePicture {
     max-width: 100%;
     max-height: 100%;
@@ -119,7 +123,10 @@ nav li:hover {
 }
 
 
-/*Intro tekst */
+/*_______________________________________________________________________________________*/
+/*                                       Intro tekst                                     */
+/*_______________________________________________________________________________________*/
+
 .intro h1 {
     display: flex;
     justify-content: center;
@@ -338,9 +345,12 @@ nav li:hover {
     margin-left: 100px;
     margin-top: 100px;
 }
-/*Chart sektion med knapper */
 
-.twoContainer{
+/*_______________________________________________________________________________________*/
+/*                              Chart pie sektion med knapper                            */
+/*_______________________________________________________________________________________*/
+
+.chart1Pie{
     display: flex;
     justify-content: center;
     height: 750px;
@@ -355,7 +365,7 @@ nav li:hover {
     align-items: center;
     background-color: rgb(38,38,38);
 }
-.right-container{
+.Pie-right-container{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -363,13 +373,26 @@ nav li:hover {
     padding-left: 75px;
     padding-bottom: 90px;
 }
-.right-container p {
+.Pie-right-container p {
     max-width: 400px;      /* styrer hvor bred teksten må være */
     line-height: 1.6;      /* gør teksten mere læsbar */
     margin: 0 auto;        /* centrerer teksten i containeren */
 }
+.Pie-right-container p {
+    color: white;
+}
 
-.grey-container{
+/*_______________________________________________________________________________________*/
+/*                                      Chart aktiv                                      */
+/*_______________________________________________________________________________________*/
+
+.chart2aktiv{
+    display: flex;
+    justify-content: center;
+    height: 750px;
+
+}
+.chart-container{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -378,26 +401,37 @@ nav li:hover {
     background-color: white;
     height: 750px;
 }
+
 .right-container button{
     background-color: white;
     width: 200px;
     height: 50px;
     justify-content: center;
 }
+/*_______________________________________________________________________________________*/
+/*                        Chart liste med filter knapper og infoknap                     */
+/*_______________________________________________________________________________________*/
 
-.grey-container button{
+
+.check-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    background-color: white;
+    height: 750px;
+}
+.check-container button{
     background-color: white;
     width: 200px;
     height: 50px;
     justify-content: center;
 }
-
 /* Selve listen */
 .filter-list {
     margin: 0;
     margin-left: 100px;
-
-
 }
 
 /* Hvert punkt i listen */
@@ -408,6 +442,28 @@ nav li:hover {
     padding: 8px;
 
 }
+
+/*_______________________________________________________________________________________*/
+/*                                  AKYIV CHART KNAP STYLING                             */
+/*_______________________________________________________________________________________*/
+#SUB {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #FB6376;
+    font-weight: 550;
+    border-color: #FB6376;
+}
+
+#SUB:hover {
+    transform: scale(0.98);
+}
+
+.dropdown {
+    position: relative; /* Gør dropdown til reference-punkt */
+}
+
+
 /* INFO Knap */
 .dropdown-btn {
     padding: 2px 4px;
@@ -416,7 +472,19 @@ nav li:hover {
     background: transparent;
     cursor: pointer;
 }
-
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    background: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    width: fit-content;
+    max-width: 90vw;
+}
 .dropdown-content p{
     padding-right: 80px;
 }
@@ -429,9 +497,40 @@ nav li:hover {
     display: block;
 }
 
+/*_______________________________________________________________________________________*/
+/*              Sektion med tal / gennemsnit af uddannelses varighed                     */
+/*_______________________________________________________________________________________*/
 
+.chart-tal-tid{
+    display: flex;
+    justify-content: center;
+    height: 750px;
 
-
+}
+.check-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    background-color: white;
+    height: 750px;
+}
+.chart-tal-left {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.chart-tal-right{
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     padding-left: 75px;
+     padding-bottom: 90px;
+ }
 
 #datamatiker1 {
     background-color: rgb(154,138,120);
@@ -488,53 +587,65 @@ nav li:hover {
     transform: translateY(0);
 }
 
-.right-container h1 {
+.chart-tal-right h1 {
         color: #FB6376;
 }
-.right-container p {
+.chart-tal-right p {
     color: white;
 }
-.grey-container h1 {
+.youtube-left h1 {
           color: #FB6376;
   }
-  .grey-container p {
+  .youtube-left p {
       color: black;
   }
 
 
 
+/*_______________________________________________________________________________________*/
+/*                                  SEKTION MED YOUTUBE                                  */
+/*_______________________________________________________________________________________*/
 
-#SUB {
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 6px;
-    background: #FB6376;
-    font-weight: 550;
-    border-color: #FB6376;
-}
-
-#SUB:hover {
-    transform: scale(0.98);
-}
-
-.dropdown {
-    position: relative; /* Gør dropdown til reference-punkt */
-}
-
-.dropdown-content {
-    position: absolute;
-    top: 100%;
-    background: white;
-    display: none;
-    align-items: center;
+.Youtube{
+    display: flex;
+    flex-direction: row;      /* Venstre/højre layout */
+    background-color: white;
+    height: 750px;
     justify-content: center;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px 20px;
-    width: fit-content;
-    max-width: 90vw;
+    align-items: center;
 }
 
+.youtube-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   /* H1 over tekst */
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-top: 0;            /* Fjern stor topmargin */
+}
+
+.youtube-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 75px;
+    padding-bottom: 0;
+    margin-right: 100px;
+}
+
+/* Neutralisér global li-styling inde i denne sektion */
+.youtube-left ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.youtube-left li {
+    display: block;
+    justify-content: flex-start;
+}
 
 
 
