@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     labels,
                     datasets: [{
                         data: values,
-                        backgroundColor: ["#686868", "#FB6376"]
+                        backgroundColor: ["#686868", "#FB6376"],
+                        borderWidth: 0
                     }]
                 },
                 options: {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         legend: { display: false },
                         datalabels: {
                             color: "#fff",
-                            font: { weight: "bold", size: 14 },
+                            font: { weight: "bold", size: 30, family: "AppleMyungjo" },
                             formatter: (v, ctx) => {
                                 const total = ctx.chart._metasets[0].total;
                                 const pct = Math.round((v / total) * 100);
