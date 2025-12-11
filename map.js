@@ -43,6 +43,3 @@ itCampusArray.forEach(function(campus) {
 `);
     
 });
-
-// Evt. ekstra marker med samme ikon
-L.marker([55.6761, 12.5683], { icon: gavoIcon }).addTo(map);
