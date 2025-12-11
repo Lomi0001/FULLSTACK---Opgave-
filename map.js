@@ -14,9 +14,10 @@ map.on('click', function () {
 });
 
 // Leaflet tiles
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap contributors © CARTO'
 }).addTo(map);
+
 
 // Definér dit custom SVG-ikon
 const gavoIcon = L.icon({
