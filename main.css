@@ -1,6 +1,6 @@
 body{
     font-family: "Crimson Text", serif;
-    background-color: rgb(38,38,38);
+    background-color: #CDC5B4;
     margin: 0;
 }
 
@@ -9,7 +9,7 @@ header{
     top: 0;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(38,38,38);
+    background-color: #CDC5B4;
     z-index: 2;
 }
 #logo {
@@ -142,7 +142,7 @@ nav li:hover {
     text-align: center;
     padding-right: 130px;
     padding-left: 130px;
-    color: white;
+    color: #68534D;
     font-size: 18px;
     padding-bottom: 100px;
 }
@@ -364,7 +364,7 @@ nav li:hover {
 }
 
 .left-container{
-    background-color: white;
+    background-color: #CDC5B4;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -386,7 +386,7 @@ nav li:hover {
     margin-left: 35px        /* centrerer teksten i containeren */
 }
 .Pie-right-container p {
-    color: white;
+    color: #68534D;
 }
 
 /*_______________________________________________________________________________________*/
@@ -405,7 +405,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 
@@ -426,11 +426,11 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 .check-container button{
-    background-color: white;
+    background-color: #CDC5B4;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -447,6 +447,7 @@ nav li:hover {
     grid-template-columns: auto 1fr;  /* Første kolonne: checkbox, anden: tekst */
     align-items: flex-start;
     padding: 8px;
+    color: #68534D;
 
 }
 
@@ -460,6 +461,7 @@ nav li:hover {
     background: #FB6376;
     font-weight: 550;
     border-color: #FB6376;
+    color: #68534D;
 }
 
 #SUB:hover {
@@ -478,11 +480,13 @@ nav li:hover {
     border: none;
     background: transparent;
     cursor: pointer;
+    color: #68534D;
+
 }
 .dropdown-content {
     position: absolute;
     top: 100%;
-    background: white;
+    background: #CDC5B4;
     display: none;
     align-items: center;
     justify-content: center;
@@ -494,6 +498,7 @@ nav li:hover {
 }
 .dropdown-content p{
     padding-right: 80px;
+    color: #68534D;
 }
 
 .dropdown-content {
@@ -520,7 +525,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 .chart-tal-left {
@@ -577,7 +582,7 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
-    color: white;
+    color: rgba(104, 83, 77, 0.33);
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -599,7 +604,7 @@ nav li:hover {
         color: #FB6376;
 }
 .chart-tal-right p {
-    color: white;
+    color: #68534D;
 }
 .youtube-left h1 {
           color: #FB6376;
@@ -617,7 +622,7 @@ nav li:hover {
 .Youtube{
     display: flex;
     flex-direction: row;      /* Venstre/højre layout */
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
     justify-content: center;
     align-items: center;
