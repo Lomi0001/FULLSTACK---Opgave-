@@ -161,9 +161,8 @@ nav li:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    position: relative;
 }
-
-
 
 /* Første billede - venstre, fuld højde */
 .billede-1 {
@@ -175,7 +174,7 @@ nav li:hover {
 .billede-1:hover {
     transform: scale(1.03);
 }
-.overlayBillede1 {
+.overlayBilleder {
    position: absolute;
     top: 50%;
     left: 50%;
@@ -189,10 +188,9 @@ nav li:hover {
     width: 20rem;
 }
 
-.billede-1:hover .overlayBillede1 {
+.billede-1:hover .overlayBilleder {
     opacity: 1;
 }
-
 
 /* Andet billede - top midten */
 .billede-2 {
@@ -205,19 +203,9 @@ nav li:hover {
     transform: scale(1.03);
 }
 
-.overlayBillede2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-2:hover .overlayBillede2 {
+.billede-2:hover .overlayBilleder {
     opacity: 1;
 }
-
-
 
 /* Tredje billede - bund midten */
 .billede-3 {
@@ -230,15 +218,7 @@ nav li:hover {
     transform: scale(1.03);
 }
 
-.overlayBillede3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-3:hover .overlayBillede3 {
+.billede-3:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -250,22 +230,15 @@ nav li:hover {
 
 /* Fjerde billede - højre, fuld højde */
 .billede-4 {
-    grid-column: 3 / 4;
+    grid-column: 3 / 3;
     grid-row: 1 / 3;
 }
 
 .billede-4:hover {
     transform: scale(1.03);
 }
-.overlayBillede4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-4:hover .overlayBillede4 {
+
+.billede-4:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -276,21 +249,14 @@ nav li:hover {
 
 .billede-5 {
     grid-column: 1 / 3; /* Spænder over 2 kolonner */
-    grid-row: 3 / 4;
+    grid-row: 3 / 3;
 }
 
 .billede-5:hover {
     transform: scale(1.03);
 }
-.overlayBillede5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-5:hover .overlayBillede5 {
+
+.billede-5:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -301,26 +267,19 @@ nav li:hover {
 
 
 .billede-6 {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
 }
 
 .billede-6:hover {
     transform: scale(1.03);
 }
-.overlayBillede6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-6:hover .overlayBillede6 {
+
+.billede-6:hover .overlayBilleder {
     opacity: 1;
 }
 
-#auLogo {
+#aarhusLogo {
     height: 2rem;
 }
 
