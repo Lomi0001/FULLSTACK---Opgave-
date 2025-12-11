@@ -1,6 +1,6 @@
 body{
     font-family: "Crimson Text", serif;
-    background-color: rgb(38,38,38);
+    background-color: #CDC5B4;
     margin: 0;
 }
 
@@ -9,7 +9,7 @@ header{
     top: 0;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(38,38,38);
+    background-color: #CDC5B4;
     z-index: 2;
 }
 #logo {
@@ -142,7 +142,7 @@ nav li:hover {
     text-align: center;
     padding-right: 130px;
     padding-left: 130px;
-    color: white;
+    color: #68534D;
     font-size: 18px;
     padding-bottom: 100px;
 }
@@ -161,9 +161,8 @@ nav li:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    position: relative;
 }
-
-
 
 /* Første billede - venstre, fuld højde */
 .billede-1 {
@@ -175,7 +174,7 @@ nav li:hover {
 .billede-1:hover {
     transform: scale(1.03);
 }
-.overlayBillede1 {
+.overlayBilleder {
    position: absolute;
     top: 50%;
     left: 50%;
@@ -189,10 +188,9 @@ nav li:hover {
     width: 20rem;
 }
 
-.billede-1:hover .overlayBillede1 {
+.billede-1:hover .overlayBilleder {
     opacity: 1;
 }
-
 
 /* Andet billede - top midten */
 .billede-2 {
@@ -205,19 +203,9 @@ nav li:hover {
     transform: scale(1.03);
 }
 
-.overlayBillede2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-2:hover .overlayBillede2 {
+.billede-2:hover .overlayBilleder {
     opacity: 1;
 }
-
-
 
 /* Tredje billede - bund midten */
 .billede-3 {
@@ -230,15 +218,7 @@ nav li:hover {
     transform: scale(1.03);
 }
 
-.overlayBillede3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-3:hover .overlayBillede3 {
+.billede-3:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -250,22 +230,15 @@ nav li:hover {
 
 /* Fjerde billede - højre, fuld højde */
 .billede-4 {
-    grid-column: 3 / 4;
+    grid-column: 3 / 3;
     grid-row: 1 / 3;
 }
 
 .billede-4:hover {
     transform: scale(1.03);
 }
-.overlayBillede4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-4:hover .overlayBillede4 {
+
+.billede-4:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -276,21 +249,14 @@ nav li:hover {
 
 .billede-5 {
     grid-column: 1 / 3; /* Spænder over 2 kolonner */
-    grid-row: 3 / 4;
+    grid-row: 3 / 3;
 }
 
 .billede-5:hover {
     transform: scale(1.03);
 }
-.overlayBillede5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-5:hover .overlayBillede5 {
+
+.billede-5:hover .overlayBilleder {
     opacity: 1;
 }
 
@@ -301,26 +267,19 @@ nav li:hover {
 
 
 .billede-6 {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
 }
 
 .billede-6:hover {
     transform: scale(1.03);
 }
-.overlayBillede6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.billede-6:hover .overlayBillede6 {
+
+.billede-6:hover .overlayBilleder {
     opacity: 1;
 }
 
-#auLogo {
+#aarhusLogo {
     height: 2rem;
 }
 
@@ -364,7 +323,7 @@ nav li:hover {
 }
 
 .left-container{
-    background-color: white;
+    background-color: #CDC5B4;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -386,7 +345,7 @@ nav li:hover {
     margin-left: 35px        /* centrerer teksten i containeren */
 }
 .Pie-right-container p {
-    color: white;
+    color: #68534D;
 }
 
 /*_______________________________________________________________________________________*/
@@ -405,7 +364,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 
@@ -426,11 +385,11 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 .check-container button{
-    background-color: white;
+    background-color: #CDC5B4;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -447,6 +406,7 @@ nav li:hover {
     grid-template-columns: auto 1fr;  /* Første kolonne: checkbox, anden: tekst */
     align-items: flex-start;
     padding: 8px;
+    color: #68534D;
 
 }
 
@@ -460,6 +420,7 @@ nav li:hover {
     background: #FB6376;
     font-weight: 550;
     border-color: #FB6376;
+    color: #68534D;
 }
 
 #SUB:hover {
@@ -478,11 +439,13 @@ nav li:hover {
     border: none;
     background: transparent;
     cursor: pointer;
+    color: #68534D;
+
 }
 .dropdown-content {
     position: absolute;
     top: 100%;
-    background: white;
+    background: #CDC5B4;
     display: none;
     align-items: center;
     justify-content: center;
@@ -494,6 +457,7 @@ nav li:hover {
 }
 .dropdown-content p{
     padding-right: 80px;
+    color: #68534D;
 }
 
 .dropdown-content {
@@ -520,7 +484,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
 }
 .chart-tal-left {
@@ -577,7 +541,7 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
-    color: white;
+    color: rgba(104, 83, 77, 0.33);
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -599,7 +563,7 @@ nav li:hover {
         color: #FB6376;
 }
 .chart-tal-right p {
-    color: white;
+    color: #68534D;
 }
 .youtube-left h1 {
           color: #FB6376;
@@ -617,7 +581,7 @@ nav li:hover {
 .Youtube{
     display: flex;
     flex-direction: row;      /* Venstre/højre layout */
-    background-color: white;
+    background-color: #CDC5B4;
     height: 750px;
     justify-content: center;
     align-items: center;

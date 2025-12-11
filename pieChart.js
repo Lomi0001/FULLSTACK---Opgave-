@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     labels,
                     datasets: [{
                         data: values,
-                        backgroundColor: ["#686868", "#FB6376"],
+                        backgroundColor: ["rgba(104, 83, 77, 0.33)", "#FB6376"],
                         borderWidth: 0
                     }]
                 },

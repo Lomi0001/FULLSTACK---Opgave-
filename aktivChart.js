@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         labels.push(row.sector);
                         values.push(Number(row.Salary));
-                        colors.push("#ff666666");   // rosa til alle andre
+                        colors.push("rgba(104, 83, 77, 0.33)");   // rosa til alle andre
                     }
                 }
 
