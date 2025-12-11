@@ -634,6 +634,7 @@ nav li:hover {
 #map {
     width: 100%;     /* fyld hele .map-of-campus-bredden */
     height: 600px;   /* eller hvad du ønsker */
+    z-index: 1;
 }
 
 .map-of-campus h1 {
