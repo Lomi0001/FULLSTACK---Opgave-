@@ -14,9 +14,10 @@ map.on('click', function () {
 });
 
 // Leaflet tiles
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap contributors © CARTO'
 }).addTo(map);
+
 
 // Definér dit custom SVG-ikon
 const gavoIcon = L.icon({
@@ -43,6 +44,3 @@ itCampusArray.forEach(function(campus) {
 `);
     
 });
-
-// Evt. ekstra marker med samme ikon
-L.marker([55.6761, 12.5683], { icon: gavoIcon }).addTo(map);
