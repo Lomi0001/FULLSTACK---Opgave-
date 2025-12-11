@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     plugins: {
                         legend: { display: false },
                         datalabels: {
-                            color: "#fff",
+                            color: ["rgba(104, 83, 77, 0.33)","#fff", ],
                             font: { weight: "bold", size: 30, family: "AppleMyungjo" },
                             formatter: (v, ctx) => {
                                 const total = ctx.chart._metasets[0].total;
