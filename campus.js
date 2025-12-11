@@ -38,7 +38,7 @@ const itCampus = {
         },
         {
             name: "Danmarks Tekniske Universitet Lyngby",
-            adress: "Anker Engelunds Vej 1, Bygning 101A, 2800 Kongens Lyngby",
+            adress: "Anker Engelunds Vej 1, 2800 Kongens Lyngby",
             link: "https://www.dtu.dk/om-dtu/kontakt-og-besoeg/find-vej/dtu-lyngby-campus",
             "lat, lng": "55.78622609326171, 12.523380539994509",
         },
@@ -116,7 +116,7 @@ const itCampus = {
         },
         {
             name: "Erhvervsakademi SydVest",
-            adress: "Erhvervsakademi Sydvest, Spangsbjerg Kirkevej 103, 6700 Esbjerg",
+            adress: "Spangsbjerg Kirkevej 103, 6700 Esbjerg",
             link: "https://www.easv.dk/da/",
             "lat, lng": "55.48779232748624, 8.446921534350736",
         },
