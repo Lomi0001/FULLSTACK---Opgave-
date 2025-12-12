@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("http://localhost:4000/salary")
+    /*          Her er vores endpoint = http://localhost:4000/salary           */
+    fetch("https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/DATA-aktiv-Chart.json")
         .then(response => response.json())
         .then(data => {
 
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     anchor: 'end',
                                     align: 'end',
                                     offset: 6,
-                                    color: '#3e3a36',
+                                    color: "#FB6376",
                                     font: { weight: '600', size: 12 },
                                     formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
                                 }

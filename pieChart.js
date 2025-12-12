@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('http://localhost:4000/kon')
+    /*          Her er vores endpoint = http://localhost:4000/kon           */
+    fetch("https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/DATA-pie-CHART.json")
         .then(res => res.json())
         .then(data => {
 
