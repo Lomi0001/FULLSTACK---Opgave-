@@ -612,15 +612,8 @@ nav li:hover {
 }
 
 /* Neutralisér global li-styling inde i denne sektion */
-.youtube-left ul {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-}
-
-.youtube-left li {
-    display: block;
-    justify-content: flex-start;
+.youtube-left h1 {
+    font-size: 3rem;
 }
 
 
