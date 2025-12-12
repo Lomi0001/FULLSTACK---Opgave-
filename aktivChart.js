@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 sosuHjem: 11       // samme her – tilpas efter dine ønsker
             };
 
+            Chart.register(ChartDataLabels);
+
             // 5. Opret chart én gang – starter tomt
             const chart = new Chart(ctx3, {
                 type: "bar",
@@ -58,23 +60,56 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 options: {
                     responsive: true,
+                    plugins: {
+                        legend: { display: false },
 
+                        datalabels: {
+                            labels: {
+                                // 1) Navn: lodret inde i søjlen
+                                sector: {
+                                    anchor: 'center',
+                                    align: 'center',
+                                    rotation: -90,
+                                    color: '#ffffff',
+                                    font: { weight: '600', size: 12 },
+                                    formatter: (value, ctx) => ctx.chart.data.labels[ctx.dataIndex],
+                                    clip: true
+                                },
+
+                                // 2) Tal: i toppen af søjlen
+                                salary: {
+                                    anchor: 'end',
+                                    align: 'end',
+                                    offset: 6,
+                                    color: '#3e3a36',
+                                    font: { weight: '600', size: 12 },
+                                    formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
+                                }
+                            }
+                        }
+                    }
+                    ,
                     scales: {
                         x: {
                             grid: {
                                 display: false
+                            },
+                            ticks: {
+                                display: false   // fjerner labels i bunden
                             }
                         },
                         y: {
                             grid: {
                                 display: false
+                            },
+                            ticks: {
+                                display: false
                             }
                         }
-
                     }
-
-
                 }
+
+
             });
 
             // 6. Funktion til at opbygge data når du klikker SUB

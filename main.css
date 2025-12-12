@@ -52,12 +52,12 @@ li a{
  header li {
      display: flex;
      justify-content: space-evenly;
-     color:rgb(154,138,120);
+     color: white;
  }
  header li a{
      display: flex;
      justify-content: space-evenly;
-     color: rgb(154,138,120);
+     color: white;
      text-decoration: none;
  }
 
@@ -425,7 +425,7 @@ nav li:hover {
     background: #FB6376;
     font-weight: 550;
     border-color: #FB6376;
-    color: #68534D;
+    color: black;
 }
 
 #SUB:hover {
@@ -450,7 +450,7 @@ nav li:hover {
 .dropdown-content {
     position: absolute;
     top: 100%;
-    background: #CDC5B4;
+    background: floralwhite;
     display: none;
     align-items: center;
     justify-content: center;
@@ -460,7 +460,7 @@ nav li:hover {
     width: fit-content;
     max-width: 90vw;
 }
-.dropdown-content p{
+.dropdown-content p {
     padding-right: 80px;
     color: #68534D;
 }
