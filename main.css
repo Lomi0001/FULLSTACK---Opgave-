@@ -343,9 +343,10 @@ nav li:hover {
     margin-right: 0px;
 }
 .Pie-right-container p {
-    max-width: 400px;      /* styrer hvor bred teksten må være */
+    max-width: 650px;      /* styrer hvor bred teksten må være */
     line-height: 1.6;      /* gør teksten mere læsbar */
-    margin-left: 35px        /* centrerer teksten i containeren */
+    margin-left: 35px;        /* centrerer teksten i containeren */
+    font-size: 30px;
 }
 .Pie-right-container p {
     color: #68534D;
