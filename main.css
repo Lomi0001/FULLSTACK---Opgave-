@@ -643,3 +643,40 @@ nav li:hover {
     box-shadow: 0 2px 3px black; /* Pink skygge */
 }
 
+/*_______________________________________________________________________________________*/
+/*                                       Om os sektion                                   */
+/*_______________________________________________________________________________________*/
+.omOsHTML{
+    background-color: #68534D;
+}
+
+.omOs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 80px;
+    margin-top: 100px;
+    color: white;
+}
+
+.omOs-section h2 {
+    color: #FB6376;
+    font-size: 40px;
+    margin-bottom: 1px;
+}
+
+.omOs-text {
+    font-size: 25px;
+    margin-top: 1px;
+}
+
+.omOs-section h3 {
+    font-size: 35px;
+    margin-bottom: 1px;
+}
+
+.omOs-text2 {
+    font-size: 25px;
+    margin-top: 1px;
+}
+
