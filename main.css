@@ -680,7 +680,12 @@ nav li:hover {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color: white;
+    background-color: #CDC5B4;
+}
+.carrousels ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
