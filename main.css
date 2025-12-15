@@ -23,6 +23,11 @@ header{
     width: 225px;
     height: 35px;
 }
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
 header div{
     flex: 1;
     display: flex;
