@@ -734,18 +734,26 @@ nav li:hover {
     margin-bottom: 20px;
 }
 
-/*_______________________________________________________________________________________*/
+/*_____________________________________________________________________________________*/
 /*                                       carrousel                                       */
-/*_______________________________________________________________________________________*/
+/*_____________________________________________________________________________________*/
 
-.carrousel{
-    box-sizing: border-box;
-}
-.slideshow-container {
-    max-width: 1000px;
+.containerForSlideshow {
     position: relative;
+    max-width: 1000px;
     margin: auto;
+    overflow: hidden;
+    height: 200px;
 }
+
+.carrousels {
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
 
 .prev, .next {
     cursor: pointer;
@@ -754,7 +762,7 @@ nav li:hover {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -762,13 +770,13 @@ nav li:hover {
     user-select: none;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -784,6 +792,20 @@ nav li:hover {
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
