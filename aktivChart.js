@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     anchor: 'end',
                                     align: 'end',
                                     offset: 6,
-                                    color: "#FB6376",
+                                    color: "#eb4d26",
                                     font: { weight: '600', size: 12 },
                                     formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
                                 }
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // IT altid først — GRØN søjle
                 labels.push(itLabel);
                 values.push(itSalary);
-                colors.push("#FB6376");  // rosa farve til IT
+                colors.push("#eb4d26");  // rosa farve til IT
 
                 // Resten af checkboxes — ROSA søjler
                 for (let i = 0; i < boxarrey.length; i++) {

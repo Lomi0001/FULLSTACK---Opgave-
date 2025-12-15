@@ -1,8 +1,10 @@
 body{
-    font-family: "Crimson Text", serif;
-    background-color: #CDC5B4;
+    font-family: "DynaPuff", system-ui;
+    background-color: #f5f2e1;
     margin: 0;
 }
+
+
 
 header{
     position: sticky;
@@ -114,38 +116,13 @@ nav li:hover {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: #FB6376;
+    color: #eb4d26;
 }
 
 /*_______________________________________________________________________________________*/
 /*                                       Intro tekst                                     */
 /*_______________________________________________________________________________________*/
 
-.intro h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: #FB6376;
-    padding-top: 100px;
-}
-
-.intro-fylde p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-right: 130px;
-    padding-left: 130px;
-    color: #68534D;
-    font-size: 18px;
-    padding-bottom: 100px;
-}
-.pictureText h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: #FB6376;
-}
 /*Intro billeder*/
 .intro-billeder {
     display: grid;
@@ -188,7 +165,7 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 
 .intro-billeder-section {
-    background-color: #68534D;
+    background-color: #f5f2e1;
     padding-top: 90px;
     padding-bottom: 80px;
 }
@@ -307,40 +284,32 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 
 .pie-chart-sektion {
-    background-color: #68534D;
+    background-color: #3177b5;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 750px;
 }
 
-
-.pie-chart {
-    display: flex;
-    justify-content: center;
-    height: 700px;
-    margin-left: 100px;
-    margin-top: 100px;
+.chart1Pie canvas {
+    height: 300px;
+    margin-left: 50px;
 }
-
 
 .chart1Pie{
     display: flex;
     justify-content: center;
-    height: 750px;
-
+    height: 600px;
+    padding-bottom: 10px;
 }
 
-.left-container{
-    background-color: #CDC5B4;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(38,38,38);
-}
+
 .Pie-right-container{
     flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 75px;
+    padding-left: 60px;
     padding-bottom: 90px;
     margin-right: 0px;
 }
@@ -348,18 +317,16 @@ nav li:hover {
     max-width: 650px;      /* styrer hvor bred teksten må være */
     line-height: 1.6;      /* gør teksten mere læsbar */
     margin-left: 35px;        /* centrerer teksten i containeren */
-    font-size: 30px;
-}
-.Pie-right-container p {
-    color: white;
+    font-size: 25px;
+    color: #f5f2e1;
 }
 
 .pie-chart-header h1 {
     display: flex;
-    color: #FB6376;
+    color: #f5f2e1;
     justify-content: center;
     margin-top: 120px;
-    font-size: 50px;
+    font-size: 70px;
     padding-top: 70px;
 }
 
@@ -367,9 +334,10 @@ nav li:hover {
 /*                                      Chart aktiv                                      */
 /*_______________________________________________________________________________________*/
 
+
 .aktiv-header h1 {
     display: flex;
-    color: #FB6376;
+    color: #eb4d26;
     justify-content: center;
     margin-top: 120px;
     font-size: 50px;
@@ -394,12 +362,12 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: #CDC5B4;
+    background-color: #f5f2e1;
     height: 750px;
 }
 
 .right-container button{
-    background-color: white;
+    background-color: #f5f2e1;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -415,11 +383,11 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: #CDC5B4;
+    background-color: #f5f2e1;
     height: 750px;
 }
 .check-container button{
-    background-color: #CDC5B4;
+    background-color: #f5f2e1;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -448,9 +416,9 @@ nav li:hover {
     cursor: pointer;
     font-size: 16px;
     border-radius: 6px;
-    background: #FB6376;
+    background: #eb4d26;
     font-weight: 550;
-    border-color: #FB6376;
+    border-color: #eb4d26;
     color: black;
 }
 
@@ -507,7 +475,7 @@ nav li:hover {
     display: flex;
     justify-content: center;
     height: 750px;
-    background-color: #68534D;
+    background-color: #f5f2e1;
 
 }
 .check-container{
@@ -516,7 +484,7 @@ nav li:hover {
     justify-content: center;
     flex-direction: column;
     padding-right: 20px;
-    background-color: #CDC5B4;
+    background-color: #f5f2e1;
     height: 750px;
 }
 .chart-tal-left {
@@ -554,7 +522,7 @@ nav li:hover {
 
 
 #animationScroll{
-    color: #FB6376;
+    color: #eb4d26;
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -562,7 +530,7 @@ nav li:hover {
 }
 
 #animationScroll p {
-    color: #FB6376;
+    color: #eb4d26;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -592,57 +560,18 @@ nav li:hover {
 }
 
 .chart-tal-right h1 {
-        color: #FB6376;
+        color: #eb4d26;
 }
 .chart-tal-right p {
     color: #68534D;
 }
 .youtube-left h1 {
-          color: #FB6376;
+          color: #eb4d26;
   }
   .youtube-left p {
       color: black;
   }
 
-
-
-/*_______________________________________________________________________________________*/
-/*                                  SEKTION MED YOUTUBE                                  */
-/*_______________________________________________________________________________________*/
-
-.Youtube{
-    display: flex;
-    flex-direction: row;      /* Venstre/højre layout */
-    background-color: #CDC5B4;
-    height: 750px;
-    justify-content: center;
-    align-items: center;
-}
-
-.youtube-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;   /* H1 over tekst */
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 100px;
-    margin-top: 0;            /* Fjern stor topmargin */
-}
-
-.youtube-right{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 75px;
-    padding-bottom: 0;
-    margin-right: 100px;
-}
-
-/* Neutralisér global li-styling inde i denne sektion */
-.youtube-left h1 {
-    font-size: 3rem;
-}
 
 /*_______________________________________________________________________________________*/
 /*                                  SEKTION MED MAP                                  */
@@ -662,7 +591,7 @@ nav li:hover {
 }
 
 .map-of-campus h1 {
-    color: #FB6376;
+    color: #eb4d26;
     display: flex;
     justify-content: center;
     font-size: 50px;
