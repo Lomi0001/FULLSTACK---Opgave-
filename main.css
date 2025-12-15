@@ -182,6 +182,17 @@ nav li:hover {
     width: 20rem;
 }
 
+
+/*_______________________________________________________________________________________*/
+/*                                       BILLEDE COLLAGE                                 */
+/*_______________________________________________________________________________________*/
+
+.intro-billeder-section {
+    background-color: #68534D;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
 .billede-1:hover .overlayBilleder {
     opacity: 1;
 }
@@ -291,20 +302,14 @@ nav li:hover {
 }
 
 
-.pie-chart-header h1 {
-    display: flex;
-    color: #FB6376;
-    justify-content: center;
-    margin-top: 120px;
-    font-size: 50px;
+/*_______________________________________________________________________________________*/
+/*                              Chart pie sektion med knapper                            */
+/*_______________________________________________________________________________________*/
+
+.pie-chart-sektion {
+    background-color: #68534D;
 }
-.pie-chart-header h2 {
-    display: flex;
-    color: #68534D;
-    justify-content: center;
-    font-size: 30px;
-}
-/*Chart sektion med knapper */
+
 
 .pie-chart {
     display: flex;
@@ -314,9 +319,6 @@ nav li:hover {
     margin-top: 100px;
 }
 
-/*_______________________________________________________________________________________*/
-/*                              Chart pie sektion med knapper                            */
-/*_______________________________________________________________________________________*/
 
 .chart1Pie{
     display: flex;
@@ -349,12 +351,36 @@ nav li:hover {
     font-size: 30px;
 }
 .Pie-right-container p {
-    color: #68534D;
+    color: white;
+}
+
+.pie-chart-header h1 {
+    display: flex;
+    color: #FB6376;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: 50px;
+    padding-top: 70px;
 }
 
 /*_______________________________________________________________________________________*/
 /*                                      Chart aktiv                                      */
 /*_______________________________________________________________________________________*/
+
+.aktiv-header h1 {
+    display: flex;
+    color: #FB6376;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: 50px;
+    padding-top: 70px;
+}
+.aktiv-header h2 {
+    display: flex;
+    color: #68534D;
+    justify-content: center;
+    font-size: 30px;
+}
 
 .chart2aktiv{
     display: flex;
@@ -481,6 +507,7 @@ nav li:hover {
     display: flex;
     justify-content: center;
     height: 750px;
+    background-color: #68534D;
 
 }
 .check-container{
@@ -546,7 +573,7 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
-    color: rgba(104, 83, 77, 0.33);
+    color: white;
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -617,6 +644,9 @@ nav li:hover {
     font-size: 3rem;
 }
 
+/*_______________________________________________________________________________________*/
+/*                                  SEKTION MED MAP                                  */
+/*_______________________________________________________________________________________*/
 
 .map-of-campus {
     width: 79%;      /* halvdelen af siden */
@@ -754,4 +784,17 @@ nav li:hover {
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+
+/*_______________________________________________________________________________________*/
+/*                                       footer                                          */
+/*_______________________________________________________________________________________*/
+
+footer {
+    background-color: #CDC5B4;
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    font-size: 17px;
 }
