@@ -196,19 +196,33 @@
         </div>
     </section>
 
-    <section class="carrousel">
-        <div class="containerForSlideshow">
-            <div class="slides">IT-arkitektur</div>
-            <div class="slides">2</div>
-            <div class="slides">3</div>
 
+    <section>
+        <div class="containerForSlideshow">
+            <div class="carrousels fade"> asdhfahsdfh
+                <h1>udd 1</h1>
+                <p>Hello, this is a quote from a person.</p>
+            </div>
+            <div class="carrousels fade">
+                <h1>udd 2</h1>
+                <p>Hello, this is a quote from an animal.</p>
+            </div>
+            <div class="carrousels fade">
+                <h1>udd 3</h1>
+                <p>Hello, this is a quote from a monster.</p>
+            </div>
+            <div class="carrousels fade">
+                <h1>udd 4</h1>
+                <p>Hello, this is a quote from a bird.</p>
+            </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="getNextSlide(1)"></span>
+            <span class="dot" onclick="getNextSlide(2)"></span>
+            <span class="dot" onclick="getNextSlide(3)"></span>
+            <span class="dot" onclick="getNextSlide(4)"></span>
         </div>
     </section>
 
@@ -268,5 +282,6 @@
 <script src="aktivChart.js"></script>
 <script src="animations.js"></script>
 <script src="infoKnapper.js"></script>
+<script src="carrousel.js"></script>
 </body>
 </html>
