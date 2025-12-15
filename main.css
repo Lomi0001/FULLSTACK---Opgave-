@@ -753,6 +753,11 @@ nav li:hover {
     text-align: center;
     background-color: #CDC5B4;
 }
+.carrousels ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 
 .prev, .next {
