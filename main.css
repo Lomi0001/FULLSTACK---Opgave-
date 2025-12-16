@@ -401,8 +401,7 @@ nav li:hover {
 }
 /* Selve listen */
 .filter-list {
-    margin: 0;
-    margin-left: 100px;
+    margin: 40px;
 }
 
 /* Hvert punkt i listen */
@@ -736,4 +735,108 @@ footer {
     padding: 20px 0;
     font-size: 17px;
     margin-top: 150px;
+}
+/*_______________________________________________________________________________________*/
+/*                                       Media queries                                         */
+/*_______________________________________________________________________________________*/
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #logo {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .socials ul {
+        display: none
+    }
+
+    #pictureFront h2{
+        font-size: 2rem;
+          }
+
+    .pie-chart-sektion {
+        height: auto;
+        margin: 20px;
+    }
+
+    .chart1Pie {
+        flex-direction: column;
+    }
+
+    .Pie-right-container {
+        padding: 20px;
+    }
+
+    .pie-chart-header h1{
+        font-size: 2rem;
+    }
+
+    .Pie-right-container ul li p{
+        font-size: 1rem;
+    }
+    .chart1Pie canvas {
+        height: 100px;
+    }
+
+    .aktiv-header {
+        height: auto;
+    }
+
+    .chart2aktiv {
+        flex-direction: column;
+    }
+
+    .check-container {
+        padding: 20px;
+    }
+    .filter-list li{
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1rem;
+    }
+
+    .chart-tal-tid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .chart-tal-left {
+        margin: 20px;
+    }
+
+    .intro-billeder {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    .containerForSlideshow {
+        height: 200px;
+        width: 400px;
+    }
+
+    .carrousels ul {
+        flex-direction: column;
+    }
+
+    .map-of-campus {
+        width: 90%;
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
