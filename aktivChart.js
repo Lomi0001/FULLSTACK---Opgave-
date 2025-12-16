@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     anchor: 'center',
                                     align: 'center',
                                     rotation: -90,
-                                    color: '#000000',
+                                    color: '#fff',
                                     font: { weight: '600', size: 12 },
                                     formatter: (value, ctx) => ctx.chart.data.labels[ctx.dataIndex],
                                     clip: true
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     anchor: 'end',
                                     align: 'end',
                                     offset: 6,
-                                    color: "#ffffff",
+                                    color: "#800000",
                                     font: { weight: '600', size: 12 },
                                     formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
                                 }
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // IT altid først — GRØN søjle
                 labels.push(itLabel);
                 values.push(itSalary);
-                colors.push("#f5f2e1");  // rosa farve til IT
+                colors.push("#800000");  // rosa farve til IT
 
                 // Resten af checkboxes — ROSA søjler
                 for (let i = 0; i < boxarrey.length; i++) {
