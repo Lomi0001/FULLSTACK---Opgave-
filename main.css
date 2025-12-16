@@ -163,128 +163,6 @@ nav li:hover {
 
 
 /*_______________________________________________________________________________________*/
-/*                                       BILLEDE COLLAGE                                 */
-/*_______________________________________________________________________________________*/
-
-.intro-billeder-section {
-    background-color: #FFF0D1;
-    padding-top: 90px;
-    padding-bottom: 80px;
-    border-radius: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.billede-1:hover .overlayBilleder {
-    opacity: 1;
-}
-
-/* Andet billede - top midten */
-.billede-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    position: relative;
-}
-
-.billede-2:hover {
-    transform: scale(1.03);
-}
-
-.billede-2:hover .overlayBilleder {
-    opacity: 1;
-}
-
-/* Tredje billede - bund midten */
-.billede-3 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    position: relative;
-}
-
-.billede-3:hover {
-    transform: scale(1.03);
-}
-
-.billede-3:hover .overlayBilleder {
-    opacity: 1;
-}
-
-#dtuLogo {
-    height: 140px;
-    width: 100px;
-}
-
-
-/* Fjerde billede - højre, fuld højde */
-.billede-4 {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-    position: relative;
-}
-
-.billede-4:hover {
-    transform: scale(1.03);
-}
-
-.billede-4:hover .overlayBilleder {
-    opacity: 1;
-}
-
-#kuLogo {
-    height: 4rem;
-}
-
-
-.billede-5 {
-    grid-column: 1 / 3; /* Spænder over 2 kolonner */
-    grid-row: 3 / 3;
-    position: relative;
-}
-
-.billede-5:hover {
-    transform: scale(1.03);
-}
-
-.billede-5:hover .overlayBilleder {
-    opacity: 1;
-}
-
-#aalborgLogoLogo {
-    height: 15rem;
-}
-
-
-
-.billede-6 {
-    grid-column: 3 / 3;
-    grid-row: 3 / 3;
-    position: relative;
-}
-
-.billede-6:hover {
-    transform: scale(1.03);
-}
-
-.billede-6:hover .overlayBilleder {
-    opacity: 1;
-}
-
-#aarhusLogo {
-    height: 2rem;
-}
-
-
-
-/* Sørg for at billederne fylder containeren */
-.intro-billeder img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 70px;
-}
-
-
-/*_______________________________________________________________________________________*/
 /*                              Chart pie sektion med knapper                            */
 /*_______________________________________________________________________________________*/
 
@@ -416,16 +294,18 @@ nav li:hover {
 }
 
 /*_______________________________________________________________________________________*/
-/*                                  AKYIV CHART KNAP STYLING                             */
+/*                                  AKTIV CHART KNAP STYLING                             */
 /*_______________________________________________________________________________________*/
 #SUB {
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 6px;
+    font-size: 13px;
+    border-radius: 15px;
     background: #800000;
     font-weight: 550;
     border-color: white;
     color: white;
+    font-family: "DynaPuff", system-ui;
+    font-weight: normal;
 }
 
 #SUB:hover {
@@ -444,8 +324,8 @@ nav li:hover {
     border: none;
     background: transparent;
     cursor: pointer;
-    color: #f5f2e1;
-
+    color: #800000;
+    font-family: "DynaPuff", system-ui;
 }
 .dropdown-content {
     position: absolute;
@@ -459,9 +339,9 @@ nav li:hover {
     padding: 15px 20px;
     width: fit-content;
     max-width: 90vw;
+    border-radius: 15px;
 }
 .dropdown-content p {
-    padding-right: 80px;
     color: black;
 }
 
@@ -544,34 +424,153 @@ nav li:hover {
     transform: translateY(0);
 }
 
+
+/*_______________________________________________________________________________________*/
+/*                                       BILLEDE COLLAGE                                 */
+/*_______________________________________________________________________________________*/
+
+.campusser {
+    background-color: #FFF0D1;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.billede-1:hover .overlayBilleder {
+    opacity: 1;
+}
+
+/* Andet billede - top midten */
+.billede-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+.billede-2:hover {
+    transform: scale(1.03);
+}
+
+.billede-2:hover .overlayBilleder {
+    opacity: 1;
+}
+
+/* Tredje billede - bund midten */
+.billede-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+}
+
+.billede-3:hover {
+    transform: scale(1.03);
+}
+
+.billede-3:hover .overlayBilleder {
+    opacity: 1;
+}
+
+#dtuLogo {
+    height: 140px;
+    width: 100px;
+}
+
+
+/* Fjerde billede - højre, fuld højde */
+.billede-4 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.billede-4:hover {
+    transform: scale(1.03);
+}
+
+.billede-4:hover .overlayBilleder {
+    opacity: 1;
+}
+
+#kuLogo {
+    height: 4rem;
+}
+
+
+.billede-5 {
+    grid-column: 1 / 3; /* Spænder over 2 kolonner */
+    grid-row: 3 / 3;
+    position: relative;
+}
+
+.billede-5:hover {
+    transform: scale(1.03);
+}
+
+.billede-5:hover .overlayBilleder {
+    opacity: 1;
+}
+
+#aalborgLogoLogo {
+    height: 15rem;
+}
+
+
+
+.billede-6 {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+    position: relative;
+}
+
+.billede-6:hover {
+    transform: scale(1.03);
+}
+
+.billede-6:hover .overlayBilleder {
+    opacity: 1;
+}
+
+#aarhusLogo {
+    height: 2rem;
+}
+
+
+
+/* Sørg for at billederne fylder containeren */
+.intro-billeder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+
 /*_______________________________________________________________________________________*/
 /*                                  SEKTION MED MAP                                  */
 /*_______________________________________________________________________________________*/
 
 .map-of-campus {
-    width: 79%;      /* halvdelen af siden */
-    margin-left: 150px;
-    margin-top: 180px;
-    margin-bottom: 200px;
-}
-
-#map {
-    width: 100%;     /* fyld hele .map-of-campus-bredden */
-    height: 600px;   /* eller hvad du ønsker */
-    z-index: 1;
-}
-
-.map-of-campus h1 {
-    color: #800000;
     display: flex;
-    justify-content: center;
-    font-size: 50px;
+    flex-direction: column;
+    align-items: center; /* Centrerer børneelementer horisontalt */
+}
+
+.map-of-campus h2 {
+    color: #800000;
+    font-size: 30px;
+    font-weight: normal;
+    /* Fjern display: flex og justify-content: space-evenly */
 }
 
 #map {
     border-radius: 20px;
-    border: 3px solid white;
-    box-shadow: 0 2px 3px black; /* Pink skygge */
+    border: 2px solid #800000;
+    box-shadow: 0 2px 3px black;
+    z-index: 1;
+    height: 550px;
+    width: 1100px;
 }
 
 /*_______________________________________________________________________________________*/
