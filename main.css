@@ -798,6 +798,10 @@ footer {
         flex-direction: column;
     }
 
+    .dashboard {
+        flex-wrap: wrap;
+    }
+
     .check-container {
         padding: 20px;
     }
