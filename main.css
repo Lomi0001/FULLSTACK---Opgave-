@@ -1,6 +1,6 @@
 body{
     font-family: "DynaPuff", system-ui;
-    background-color: #f5f2e1;
+    background-color: #d3deb1;
     margin: 0;
 }
 
@@ -11,7 +11,7 @@ header{
     top: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #f5f2e1;
+    background-color: #FFF0D1;
     z-index: 2;
 }
 #logo {
@@ -26,7 +26,7 @@ header{
     height: 35px;
     text-decoration: none;
     font-size: 2rem;
-    color: #eb4d26;
+    color: #800000;
 }
 
 #logo:hover {
@@ -62,12 +62,12 @@ li a{
  header li {
      display: flex;
      justify-content: space-evenly;
-     color: #eb4d26;
+     color: #800000;
  }
  header li a{
      display: flex;
      justify-content: space-evenly;
-     color: #eb4d26;
+     color: #800000;
      text-decoration: none;
  }
 
@@ -118,7 +118,7 @@ nav li:hover {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: #eb4d26;
+    color: #800000;
 }
 
 /*_______________________________________________________________________________________*/
@@ -167,7 +167,7 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 
 .intro-billeder-section {
-    background-color: white;
+    background-color: #FFF0D1;
     padding-top: 90px;
     padding-bottom: 80px;
     border-radius: 30px;
@@ -289,7 +289,7 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 
 .pie-chart-sektion {
-    background-color: #eb4d26;
+    background-color: #FFF0D1;
     border-radius: 30px;
     margin-left: 70px;
     margin-right: 70px;
@@ -323,12 +323,12 @@ nav li:hover {
     line-height: 1.6;      /* gør teksten mere læsbar */
     margin-left: 35px;        /* centrerer teksten i containeren */
     font-size: 25px;
-    color: #f5f2e1;
+    color: #800000;
 }
 
 .pie-chart-header h1 {
     display: flex;
-    color: #f5f2e1;
+    color: #800000;
     justify-content: center;
     margin-top: 120px;
     font-size: 70px;
@@ -339,7 +339,7 @@ nav li:hover {
 /*                                      Chart aktiv                                      */
 /*_______________________________________________________________________________________*/
 .aktiv-header {
-    background-color: #a64c49;
+    background-color: #FFF0D1;
     border-radius: 30px;
     margin-left: 70px;
     margin-right: 70px;
@@ -348,7 +348,7 @@ nav li:hover {
 
 .aktiv-header h1 {
     display: flex;
-    color: white;
+    color: #800000;
     justify-content: center;
     margin-top: 120px;
     font-size: 50px;
@@ -356,7 +356,7 @@ nav li:hover {
 }
 .aktiv-header h2 {
     display: flex;
-    color: white;
+    color: #800000;
     justify-content: center;
     font-size: 30px;
 }
@@ -410,8 +410,8 @@ nav li:hover {
     display: grid;
     grid-template-columns: auto 1fr;  /* Første kolonne: checkbox, anden: tekst */
     align-items: flex-start;
-    padding: 9px;
-    color: #f5f2e1;
+    padding: 8px;
+    color: #800000;
     font-size: 20px;
 
 }
@@ -422,12 +422,11 @@ nav li:hover {
 #SUB {
     cursor: pointer;
     font-size: 16px;
-    background: white;
+    border-radius: 6px;
+    background: #800000;
     font-weight: 550;
     border-color: white;
-    color: black;
-    border-radius: 20px;
-    font-family: "DynaPuff", system-ui;
+    color: white;
 }
 
 #SUB:hover {
@@ -447,7 +446,6 @@ nav li:hover {
     background: transparent;
     cursor: pointer;
     color: #f5f2e1;
-    font-family: "DynaPuff", system-ui;;
 
 }
 .dropdown-content {
@@ -462,9 +460,9 @@ nav li:hover {
     padding: 15px 20px;
     width: fit-content;
     max-width: 90vw;
-    border-radius: 20px;
 }
 .dropdown-content p {
+    padding-right: 80px;
     color: black;
 }
 
@@ -484,7 +482,7 @@ nav li:hover {
     display: flex;
     justify-content: center;
     height: 750px;
-    background-color: #f5f2e1;
+    background-color: #FFF0D1;
 }
 
 .chart-tal-left {
@@ -528,7 +526,7 @@ nav li:hover {
 
 
 #animationScroll{
-    color: #eb4d26;
+    color: #800000;
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -536,7 +534,7 @@ nav li:hover {
 }
 
 #animationScroll p {
-    color: #eb4d26;
+    color: #800000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -547,7 +545,7 @@ nav li:hover {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease, transform 2s ease;
-    color: white;
+    color: rgba(104, 83, 77, 0.33);
     font-size: 10rem;
     display: flex;
     flex-direction: column;
@@ -566,7 +564,7 @@ nav li:hover {
 }
 
 .chart-tal-right h1 {
-        color: #eb4d26;
+        color: #800000;
 }
 .chart-tal-right p {
     color: #68534D;
@@ -597,7 +595,7 @@ nav li:hover {
 }
 
 .map-of-campus h1 {
-    color: #eb4d26;
+    color: #800000;
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -678,7 +676,7 @@ nav li:hover {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    height: 400px;
+    height: 200px;
     border-radius: 30px;
     margin-bottom: 15px;
 }
@@ -688,8 +686,8 @@ nav li:hover {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color: #eb4d26;
-    color: white;
+    background-color:#FFF0D1 ;
+    color: #800000;
 }
 .carrousels ul{
     display: flex;
@@ -754,41 +752,16 @@ nav li:hover {
     }
 }
 
+
 /*_______________________________________________________________________________________*/
 /*                                       footer                                          */
 /*_______________________________________________________________________________________*/
 
 footer {
-    background-color: #CDC5B4;
+    background-color: #FFF0D1;
     width: 100%;
     border-top: 1px solid black;
     padding: 20px 0;
     font-size: 17px;
     margin-top: 150px;
 }
-/*_______________________________________________________________________________________*/
-/*                                       Media queries                                      */
-/*_______________________________________________________________________________________*/
-
-
-@media (max-width: 768px) {
-    /* Header */
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    #logo {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 18px;
-    }
-
-    .socials ul {
-        display: none;
-    }}
