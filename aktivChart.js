@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const detail = document.querySelector("#detail");
             const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder");
             const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik");
-            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg");
             const sosuHjem = document.querySelector("#sosuHjem");
 
             const BTN = document.querySelector("#SUB");
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 detail,
                 sygeplejeJordemoder,
                 undervisningPaedagogik,
-                sundhedsOmsorg,
                 sosuHjem
             ];
 
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 detail: 2,      // "Service- og salgsarbejde" eller anden du ønsker
                 sygeplejeJordemoder: 9,      // "Arbejde inden for sundhedsområdet"
                 undervisningPaedagogik: 4,   // "Undervisning og pædagogisk arbejde"
-                sundhedsOmsorg: 8,      // kan evt. pege på samme som ovenfor, tilpas efter behov
                 sosuHjem: 11       // samme her – tilpas efter dine ønsker
             };
 
