@@ -743,7 +743,7 @@ footer{
     flex-direction: column;
     justify-content: left;
     margin-left: 80px;
-    margin-top: 100px;
+    margin-top: 70px;
     color: black;
 }
 
@@ -799,6 +799,7 @@ footer{
     text-align: center;
     max-width: 1100px;
     margin: 0 auto 40px auto;
+    margin-bottom: 75px;
 }
 
 
