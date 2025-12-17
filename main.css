@@ -858,6 +858,33 @@ footer {
     margin-left: 80px;
 }
 
+
+/*_______________________________________________________________________________________*/
+/*                                       articles sektion                                   */
+/*_______________________________________________________________________________________*/
+
+.articlesHTML {
+    background-color: #d3deb1;
+}
+
+.articlesHTML li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.title a {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
 /*_______________________________________________________________________________________*/
 /*                                       Media queries                                         */
 /*_______________________________________________________________________________________*/
@@ -893,100 +920,99 @@ footer {
         width: 100%;
     }
 
-    .piechart-sektion {
-        .pie-chart-section {
-            height: auto;
-            margin: 00px;
-        }
-
-        .chart1Pie {
-            flex-direction: column;
-        }
-
-        .piechart {
-            padding: 20px;
-        }
-
-        .piechart-header h1 {
-            font-size: 2rem;
-        }
-
-        .piehart-text p {
-            font-size: 1rem;
-        }
-
-        .chart {
-            height: 100px;
-            width: 100px;
-        }
-
-        .active-header {
-            height: auto;
-        }
-
-        .chart2active {
-            flex-direction: column;
-        }
-
-        .dashboard {
-            flex-wrap: wrap;
-        }
-
-        .check-container {
-            padding: 20px;
-        }
-
-        .filter-list li {
-            display: flex;
-            flex-direction: row-reverse;
-            font-size: 1rem;
-        }
-
-        .chart-avg-time {
-            flex-direction: column;
-            height: auto;
-        }
-
-        .chart-time-left {
-            margin: 20px;
-        }
-
-        .intro-pictures {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
-        }
-
-        #animationScroll {
-            font-size: 5rem;
-        }
-
-        #animationScroll1 {
-            font-size: 5rem;
-        }
-
-        .chart-tal-container {
-            flex-direction: column;
-        }
-
-        .containerForSlideshow {
-            height: 200px;
-            width: 400px;
-        }
-
-        .carrousels ul {
-            flex-direction: column;
-        }
-
-        #map {
-            width: 90%;
-        }
-
-        .map-of-campus {
-            width: 90%;
-            margin: 20px;
-        }
-
-        footer {
-            font-size: 14px;
-        }
+    .pie-chart-section {
+        height: auto;
+        margin: 00px;
     }
+
+    .chart1Pie {
+        flex-direction: column;
+    }
+
+    .piechart {
+        padding: 20px;
+    }
+
+    .piechart-header h1 {
+        font-size: 2rem;
+    }
+
+    .piehart-text p {
+        font-size: 1rem;
+    }
+
+    .chart {
+        height: 100px;
+        width: 100px;
+    }
+
+    .active-header {
+        height: auto;
+    }
+
+    .chart2active {
+        flex-direction: column;
+    }
+
+    .dashboard {
+        flex-wrap: wrap;
+    }
+
+    .check-container {
+        padding: 20px;
+    }
+
+    .filter-list li {
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1rem;
+    }
+
+    .chart-avg-time {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .chart-time-left {
+        margin: 20px;
+    }
+
+    .intro-pictures {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    #animationScroll {
+        font-size: 5rem;
+    }
+
+    #animationScroll1 {
+        font-size: 5rem;
+    }
+
+    .chart-tal-container {
+        flex-direction: column;
+    }
+
+    .containerForSlideshow {
+        height: 200px;
+        width: 400px;
+    }
+
+    .carrousels ul {
+        flex-direction: column;
+    }
+
+    #map {
+        width: 90%;
+    }
+
+    .map-of-campus {
+        width: 90%;
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
