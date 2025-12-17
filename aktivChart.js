@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
 
-            // 1. IT ligger på index 0 i dit JSON (jf. screenshot)
-            const itRow = data[0];
-            const itLabel = itRow.sector;                // "It"
-            const itSalary = Number(itRow.Salary);       // "60988.5556" -> tal
 
-            // 2. Canvas til dashboard-chart
+            const itRow = data[0];
+            const itLabel = itRow.sector;                // It
+            const itSalary = Number(itRow.Salary);       // løn
+
+
             const ctx3 = document.querySelector(".dashboard").getContext("2d");
 
-            // 3. Hent checkboxes
+
             const forretningsservice = document.querySelector("#forretningsservice");
             const kontorSekretaer = document.querySelector("#kontorSekretaer");
             const detail = document.querySelector("#detail");
@@ -31,20 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 sosuHjem
             ];
 
-            // 4. Koble hver checkbox til et bestemt index i data
-            // Justér index, hvis rækkefølgen i JSON er anderledes
+            // 4. Koble hver checkbox til et bestemt index (data Json)
             const sectorIndexMap = {
-                forretningsservice: 6,      // fx "Arbejde inden for forretningsservice, økonomi, ..."
-                kontorSekretaer: 1,      // "Almindeligt kontor- og kundeservicearbejde"
-                detail: 2,      // "Service- og salgsarbejde" eller anden du ønsker
-                sygeplejeJordemoder: 9,      // "Arbejde inden for sundhedsområdet"
-                undervisningPaedagogik: 4,   // "Undervisning og pædagogisk arbejde"
-                sosuHjem: 11       // samme her – tilpas efter dine ønsker
+                forretningsservice: 6,
+                kontorSekretaer: 1,
+                detail: 2,
+                sygeplejeJordemoder: 9,
+                undervisningPaedagogik: 4,
+                sosuHjem: 11
             };
 
             Chart.register(ChartDataLabels);
 
-            // 5. Opret chart én gang – starter tomt
+
             const chart = new Chart(ctx3, {
                 type: "bar",
                 data: {
@@ -116,12 +115,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 const values = [];
                 const colors = [];
 
-                // IT altid først — GRØN søjle
+                // IT altid først — rød søjle
                 labels.push(itLabel);
                 values.push(itSalary);
                 colors.push("#800000");  // rosa farve til IT
 
-                // Resten af checkboxes — ROSA søjler
+                // Resten af checkboxes — grå søjler
                 for (let i = 0; i < boxarrey.length; i++) {
                     const checkbox = boxarrey[i];
 
@@ -131,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         labels.push(row.sector);
                         values.push(Number(row.Salary));
-                        colors.push("rgba(104, 83, 77, 0.33)");   // rosa til alle andre
+                        colors.push("rgba(104, 83, 77, 0.33)");
                     }
                 }
 
@@ -144,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
 
-            // 7. Knyt SUB-knappen til funktionen
+            // SUB-knap til funktion
             BTN.addEventListener("click", tjekCheckbox);
         })
         .catch(error => console.error("Fejl ved hentning af data:", error));

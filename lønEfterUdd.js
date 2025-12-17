@@ -13,36 +13,28 @@ app.use(express.json());
 // MySQL connection
 const db = mysql.createConnection({
     host: process.env.DBHOST,
-    user: process.env.DBUSER,                // eller den bruger du faktisk logger ind med
-    password: process.env.DBPASSWORD, // din rigtige MySQL-adgangskode
-    database: process.env.DBDATABASE           // eller hvad din database hedder
+    user: process.env.DBUSER,
+    password: process.env.DBPASSWORD,
+    database: process.env.DBDATABASE
 });
 
 
 
-// Connect to MySQL
 db.connect((err) => {
     if (err) {
-        console.error("❌ Kunne ikke forbinde til MySQL:", err);
+        console.error("Kunne ikke forbinde til MySQL:", err);
         return;
     }
 
 
 
-    console.log("✅ Forbundet til MySQL database!");
+    console.log("Forbundet til MySQL database!");
 
-    // Start server when DB is ready
+
 
 });
 
-// Test-route
-app.get("/", (req, res) => {
-    console.log("asasdasdasdadsads")
-    console.log("asasdasdasdadsads")
-    console.log("asasdasdasdadsads")
-    console.log("asasdasdasdadsads")
-    res.send("Serveren kører og MySQL er forbundet!");
-});
+
 
 // Example route to fetch data
 app.get("/salary", (req, res) => {
@@ -63,8 +55,8 @@ app.get("/kon", (req, res) => {
 
 app.listen(port, (err) => {
     if (err) {
-        console.error("❌ Server failed:", err);
+        console.error("Server fejlede:", err);
         return;
     }
-    console.log(`🚀 Server kører på port ${port}`);
+    console.log(`Server kører på port ${port}`);
 });

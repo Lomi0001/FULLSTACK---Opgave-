@@ -1,3 +1,5 @@
+/*  Lånt fra Leaflet og Gitbook*/
+
 console.log(itCampus);
 
 const itCampusArray = itCampus.Sheet1;
