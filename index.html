@@ -50,13 +50,13 @@
 <!--- Selve siden-->
 <main>
     <section>
-        <div id="pictureFront">
+        <div id="frontpage-titel">
         <h2> Flere kvinder i koden </h2>
         </div>
     </section>
     <!-- container 1-->
     <section>
-        <div id="containerForLargePictureAndText">
+        <div id="frontpage-picture">
             <img id="drawingPicture" src="logo/svg/business-workplace-sketch-concept.png" height="600" width="600"/></div>
     </section>
 
@@ -65,43 +65,35 @@
 
 
     <!-- container 2-->
-    <div class="pie-chart-sektion">
-    <section class="pie-chart-header">
-        <h1>For få kvinder i IT</h1>
-    </section>
+    <div class="piechart-sektion">
+        <section class="piechart-header">
+            <h1>For få kvinder i IT</h1>
+        </section>
 
-    <section class="chart1Pie">
-        <div class="pie-chart">
-            <ul>
-                <li>
-                    <canvas class="chart" style="width:460px;max-width:800px"></canvas>
-                </li>
-            </ul>
-        </div>
-
-        <div class="Pie-right-container">
-            <ul>
-                <li>
-
-                    <p>
-                        Danmark har brug for dit digitale talent. IT-branchen vokser, men mangler stadig dig og dine ideer. Hvis vi skal forme fremtidens teknologi, skal vi rekruttere bredere – og her er kvinder en nøgle til succes.
-
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <section class="chart1Pie">
+            <div class="piechart">
+                <canvas class="chart" style="width:460px;max-width:800px"></canvas>
+            </div>
+            <div class="piechart-text">
+                <p>
+                    Danmark har brug for dit digitale talent. IT-branchen vokser, men mangler stadig dig og dine ideer.
+                    Hvis
+                    vi skal forme fremtidens teknologi, skal vi rekruttere bredere – og her er kvinder en nøgle til
+                    succes.
+                </p>
+            </div>
+        </section>
     </div>
     <!-- container 3-->
 
 
     <section class="aktiv-header">
         <h1>Tjek din fremtidige løn</h1>
-        <h2>Sammenlign gennemsnitslønnen i IT-branchen med de sektorer flest kvinder arbejder i</h2>
+        <h2>Gennemsnitlig løn i IT kontra kvindedominerede sektorer</h2>
     <div class="chart2aktiv">
         <div class="check-container">
             <ul class="filter-list">
-
+                <h3>Sammenlign med..</h3>
                 <li>
                     <label>
                         <input type="checkbox" id="forretningsservice"> Forretningsservice, økonomi & administration
@@ -165,32 +157,29 @@
         </div>
 
         <div class="chart-container">
-
-
-            <canvas class="dashboard" style="width:100%;height:80%"></canvas>
-
-
+            <canvas class="dashboard" style="width:100%;height:70%"></canvas>
         </div>
 
     </div>
 
     </section>
 
-    <br class="new-section">
-
     <!-- container 4-->
-
     <section class="chart-tal-tid">
-        <div class="chart-tal-left">
-            <p id="animationScroll">2,6<br> <span style="font-size: 25px"> år i gns. for IT </span>
-            </p>
-        </div>
-        <div class="chart-tal-left">
-            <p id="animationScroll1">3,5<br><span style="font-size: 25px"> år i gns. for 'Andre' </span>
-            </p>
-        </div>
-        <div class="chart-tal-right">
-            <p>Gennemsnitlig varighed af IT-uddannelser sammenlignet med de mest populære kvindedominerede uddannelser (samlet som 'Andre')</p>
+        <h1>Hvor længe vil du læse?</h1>
+        <div class="chart-tal-container">
+            <div class="chart-tal-left">
+                <p id="animationScroll">2,6<br> <span style="font-size: 25px"> år i gns. for IT </span>
+                </p>
+            </div>
+            <div class="chart-tal-left">
+                <p id="animationScroll1">3,5<br><span style="font-size: 25px"> år i gns. for 'Andre' </span>
+                </p>
+            </div>
+            <div class="chart-tal-right">
+                <p>Gennemsnitlig varighed af IT-uddannelser sammenlignet med de mest populære kvindedominerede
+                    uddannelser (samlet som 'Andre')</p>
+            </div>
         </div>
     </section>
 
@@ -247,7 +236,7 @@
 
     <section class="campusser">
         <section class="intro-billeder-section">
-            <h1>Campusser</h1>
+            <h1>Se vores Campusser</h1>
             <div class="intro-billeder">
                 <div class="billede-1">
                     <a href="https://www.ek.dk/kurser?interests=IT+og+multimedie" target="_blank"><img
@@ -300,22 +289,46 @@
             </div>
         </section>
 
+        <hr>
+
         <section class="map-of-campus">
-            <h2>Find dit nærmeste campus!</h2>
+            <h2>Find ud af hvor <span style="font-weight: bold">du</span> kan studere IT!</h2>
             <div id="map"></div>
         </section>
     </section>
 
     <footer>
-        <div>
+        <div class="contact-info">
             <ul>
                 <li>IncludeIT</li>
                 <li>Gudlbergsgade 29</li>
                 <li>2200 København</li>
                 <li>Telefon: +45 12 34 56 78</li>
-                <li>E-mail: kontakt@includeit.dk</li>
             </ul>
+        </div>
 
+        <div class="copyright">
+            <p>© 2025 IncludeIT. Alle rettigheder forbeholdes.</p>
+        </div>
+
+        <div class="socials-bot">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ErhvervsakademiKoebenhavn.dk" target="_blank">
+                        <img src="logo/svg/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_ekdigital/" target="_blank">
+                        <img src="logo/svg/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kontakt@includeit.dk" target="_blank">
+                        <img src="logo/svg/mail.svg" alt="Mail">
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </main>
