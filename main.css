@@ -993,7 +993,7 @@ footer {
 
     .intro-pictures {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: (6, 1fr);
         height: auto;
     }
 
