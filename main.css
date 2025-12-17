@@ -93,11 +93,16 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 /*                                   Forside billede og titel                            */
 /*_______________________________________________________________________________________*/
-#frontpage-picture{
+#frontpage-picture {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
     margin-top: 0px;
+}
+
+#drawingPicture {
+    height: 600px;
+    width: 600Px;
 }
 #frontpage-titel {
     display: flex;
