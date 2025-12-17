@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          crossorigin=""/>
     <title>WIT</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 </head>
@@ -16,9 +18,9 @@
 <!--- Header-->
 <header>
     <div>
-    <a id="logo" href="index.html"> < IncludeIT > </a>
+        <a id="logo" href="index.html"> < IncludeIT > </a>
     </div>
-        <div>
+    <div>
         <nav>
             <ul>
                 <li><a href="data.html">Data</a></li>
@@ -53,17 +55,17 @@
 <main>
     <section>
         <div id="frontpage-titel">
-        <h2> Flere kvinder i koden </h2>
+            <h2> Flere kvinder i koden </h2>
         </div>
     </section>
     <!-- container 1-->
     <section>
         <div id="frontpage-picture">
-            <img id="drawingPicture" src="logo/svg/business-workplace-sketch-concept.png" alt="Billede af computer, noter og blyant"/></div>
+            <img id="drawingPicture" src="logo/svg/business-workplace-sketch-concept.png"
+                 alt="Billede af computer, noter og blyant"/></div>
     </section>
 
     <!-- Vores formål sektion -->
-
 
 
     <!-- container 2-->
@@ -92,77 +94,79 @@
     <section class="active-header">
         <h1>Tjek din fremtidige løn</h1>
         <h2>Gennemsnitlig løn i IT kontra kvindedominerede sektorer</h2>
-    <div class="chart2active">
-        <div class="check-container">
-            <ul class="filter-list">
-                <h3>Sammenlign med..</h3>
-                <li>
-                    <label>
-                        <input type="checkbox" id="forretningsservice"> Forretningsservice, økonomi & administration
-                    </label>
-                </li>
+        <div class="chart2active">
+            <div class="check-container">
+                <ul class="filter-list">
+                    <h3>Sammenlign med..</h3>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="forretningsservice"> Forretningsservice, økonomi & administration
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="kontorSekretaer"> Kontor & sekretær
-                    </label>
-                </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="kontorSekretaer"> Kontor & sekretær
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="detail"> Service- og salgsarbejde
-                    </label>
-                </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="detail"> Service- og salgsarbejde
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="sygeplejeJordemoder"> Sygepleje & jordemoder
-                    </label>
-                </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="sygeplejeJordemoder"> Sygepleje & jordemoder
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="undervisningPaedagogik"> Undervisning & pædagogik
-                    </label>
-                </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="undervisningPaedagogik"> Undervisning & pædagogik
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="sundhedsOmsorg"> Sundhedsomsorg
-                    </label>
-                </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="sundhedsOmsorg"> Sundhedsomsorg
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="checkbox" id="sosuHjem"> Social- & sundhedspleje (hjem)
-                    </label>
-                </li>
-                <li>
-                    <button id="SUB">Vis resultater</button>
-                </li>
-                <div class="dropdown">
-                    <button class="dropdown-btn">Bag om grafen <span style="font-size: 12px">▼</span></button>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="sosuHjem"> Social- & sundhedspleje (hjem)
+                        </label>
+                    </li>
+                    <li>
+                        <button id="SUB">Vis resultater</button>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Bag om grafen <span style="font-size: 12px">▼</span></button>
 
-                    <div class="dropdown-content">
-                        <p>
-                            Vores analyse er baseret på officielle tal fra <a href="https://www.dst.dk/da/Statistik/emner/arbejde-og-indkomst/indkomst-og-loen/loen" target="_blank">Danmarks statistik</a>
-                            Datagrundlaget er observeret i perioden 1. december til 17. december 2025,
-                            og alle konklusioner i materialet tager udgangspunkt i de registreringer,
-                            der ligger inden for denne tidsramme.
-                        </p>
+                        <div class="dropdown-content">
+                            <p>
+                                Vores analyse er baseret på officielle tal fra <a
+                                    href="https://www.dst.dk/da/Statistik/emner/arbejde-og-indkomst/indkomst-og-loen/loen"
+                                    target="_blank">Danmarks statistik</a>
+                                Datagrundlaget er observeret i perioden 1. december til 17. december 2025,
+                                og alle konklusioner i materialet tager udgangspunkt i de registreringer,
+                                der ligger inden for denne tidsramme.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
 
-            </ul>
+                </ul>
+
+            </div>
+
+            <div class="chart-container">
+                <canvas class="dashboard" style="width:100%;height:70%"></canvas>
+            </div>
 
         </div>
-
-        <div class="chart-container">
-            <canvas class="dashboard" style="width:100%;height:70%"></canvas>
-        </div>
-
-    </div>
 
     </section>
 
@@ -197,7 +201,7 @@
                     <li><h3>Softwareudvikler</h3></li>
                     <li><h3>It-arkitektur</h3></li>
                 </ul>
-                    <ul>
+                <ul>
                     <li><h3>It-arkitektur</h3></li>
                     <li><h3>Multimediedesigner</h3></li>
                     <li><h3>It-arkitektur</h3></li>
@@ -205,17 +209,17 @@
                 </ul>
             </div>
             <div class="carrousels fade">
-            <h1>Professionsbachelor It</h1>
+                <h1>Professionsbachelor It</h1>
                 <h2>3,5 år (6 måneders praktik)</h2>
-            <ul>
-                <li><h3>It-arkitektur</h3></li>
-                <li><h3>It-arkitektur</h3></li>
-                <li><h3>It-arkitektur</h3></li>
-                <li><h3>It-arkitektur</h3></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><h3>It-arkitektur</h3></li>
+                    <li><h3>It-arkitektur</h3></li>
+                    <li><h3>It-arkitektur</h3></li>
+                    <li><h3>It-arkitektur</h3></li>
+                </ul>
+            </div>
             <div class="carrousels fade">
-            <h1>Akademiuddannelser It</h1>
+                <h1>Akademiuddannelser It</h1>
                 <h2> 2 år</h2>
                 <ul>
                     <li><h3>It-arkitektur</h3></li>
@@ -223,7 +227,7 @@
                     <li><h3>It-arkitektur</h3></li>
                     <li><h3>It-arkitektur</h3></li>
                 </ul>
-        </div>
+            </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>

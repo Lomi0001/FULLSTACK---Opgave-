@@ -2,7 +2,7 @@
 /*                                       Generel styling                                */
 /*_______________________________________________________________________________________*/
 
-body{
+body {
     font-family: "DynaPuff", system-ui;
     background-color: #d3deb1;
     margin: 0;
@@ -13,7 +13,7 @@ body{
 /*                                       Header styling                                  */
 /*_______________________________________________________________________________________*/
 
-header{
+header {
     position: sticky;
     top: 0;
     display: flex;
@@ -41,7 +41,7 @@ header{
 }
 
 
-header div{
+header div {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -49,14 +49,14 @@ header div{
 }
 
 
- header li a{
-     display: flex;
-     justify-content: space-evenly;
-     color: #800000;
-     text-decoration: none;
- }
+header li a {
+    display: flex;
+    justify-content: space-evenly;
+    color: #800000;
+    text-decoration: none;
+}
 
-.socials ul{
+.socials ul {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -74,7 +74,7 @@ header div{
 }
 
 
-nav ul{
+nav ul {
     display: flex;
     gap: 95px;
     list-style: none;
@@ -102,6 +102,7 @@ nav li:hover {
     height: 600px;
     width: 600Px;
 }
+
 #frontpage-titel {
     display: flex;
     justify-content: center;
@@ -124,14 +125,14 @@ nav li:hover {
 }
 
 
-.chart1Pie{
+.chart1Pie {
     display: flex;
     justify-content: center;
     height: 600px;
     padding-bottom: 10px;
 }
 
-.piechart-text{
+.piechart-text {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -141,9 +142,9 @@ nav li:hover {
 }
 
 .piechart-text p {
-    max-width: 650px;      /* styrer hvor bred teksten må være */
-    line-height: 1.6;      /* gør teksten mere læsbar */
-    margin-left: 35px;        /* centrerer teksten i containeren */
+    max-width: 650px; /* styrer hvor bred teksten må være */
+    line-height: 1.6; /* gør teksten mere læsbar */
+    margin-left: 35px; /* centrerer teksten i containeren */
     font-size: 25px;
     color: #800000;
     list-style: none;
@@ -187,6 +188,7 @@ nav li:hover {
     font-size: 50px;
     padding-top: 60px;
 }
+
 .active-header h2 {
     display: flex;
     color: #800000;
@@ -195,12 +197,12 @@ nav li:hover {
     font-weight: lighter;
 }
 
-.chart2active{
+.chart2active {
     display: flex;
     justify-content: center;
 }
 
-.chart-container{
+.chart-container {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -209,7 +211,7 @@ nav li:hover {
     height: 660px;
 }
 
-.right-container button{
+.right-container button {
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -221,7 +223,7 @@ nav li:hover {
 /*_______________________________________________________________________________________*/
 
 
-.check-container{
+.check-container {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -229,11 +231,13 @@ nav li:hover {
     padding-right: 20px;
     height: 750px;
 }
-.check-container button{
+
+.check-container button {
     width: 200px;
     height: 50px;
     justify-content: center;
 }
+
 /* Selve listen */
 .filter-list {
     margin: 40px;
@@ -242,7 +246,7 @@ nav li:hover {
 /* Hvert punkt i listen */
 .filter-list li {
     display: grid;
-    grid-template-columns: auto 1fr;  /* Første kolonne: checkbox, anden: tekst */
+    grid-template-columns: auto 1fr; /* Første kolonne: checkbox, anden: tekst */
     align-items: flex-start;
     padding: 8px;
     color: #800000;
@@ -252,7 +256,7 @@ nav li:hover {
 .filter-list h3 {
     color: maroon;
     font-size: 25px;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .filter-list input[type="checkbox"] {
@@ -294,6 +298,7 @@ nav li:hover {
     color: #800000;
     font-family: "DynaPuff", system-ui;
 }
+
 .dropdown-content {
     position: absolute;
     top: 100%;
@@ -302,12 +307,13 @@ nav li:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px 20px;
     width: fit-content;
     max-width: 90vw;
     border-radius: 15px;
 }
+
 .dropdown-content p {
     color: black;
 }
@@ -346,15 +352,15 @@ nav li:hover {
     margin-left: 100px;
 }
 
-.chart-time-right{
-     flex: 1;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     padding-left: 75px;
-     padding-bottom: 90px;
+.chart-time-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 75px;
+    padding-bottom: 90px;
     margin-right: 20px;
- }
+}
 
 .chart-time-right p {
     color: #800000;
@@ -375,14 +381,13 @@ nav li:hover {
 }
 
 
-#animationScroll{
+#animationScroll {
     color: #800000;
     font-size: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 
 #animationScroll1 {
@@ -425,16 +430,17 @@ nav li:hover {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color:#FFF0D1 ;
+    background-color: #FFF0D1;
     color: #800000;
 }
-.carrousels ul{
+
+.carrousels ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.carrousels ul li{
+.carrousels ul li {
     color: #800000;
 }
 
@@ -459,7 +465,7 @@ nav li:hover {
 }
 
 .prev:hover, .next:hover {
-    transform: scale(1,2);
+    transform: scale(1, 2);
 }
 
 .dot {
@@ -533,6 +539,7 @@ nav li:hover {
 .pictures-1:hover {
     transform: scale(1.03);
 }
+
 .overlayPictures {
     position: absolute;
     top: 50%;
@@ -626,7 +633,6 @@ nav li:hover {
 }
 
 
-
 .pictures-6 {
     grid-column: 3 / 3;
     grid-row: 3 / 3;
@@ -646,9 +652,8 @@ nav li:hover {
 }
 
 
-
 /* Sørg for at billederne fylder containeren */
-.intro-pictures img{
+.intro-pictures img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -661,7 +666,7 @@ nav li:hover {
 
 hr {
     border: none;
-    height:2px;
+    height: 2px;
     background-color: #F0DDB6;
     width: 85%;
     border-radius: 2px;
@@ -692,7 +697,7 @@ hr {
 /*                                       footer                                          */
 /*_______________________________________________________________________________________*/
 
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     background-color: #FFF0D1;
@@ -701,7 +706,7 @@ footer{
     color: dimgray;
 }
 
-.contact-info ul{
+.contact-info ul {
     list-style: none;
     padding-left: 0;
     font-size: 13px;
@@ -712,7 +717,7 @@ footer{
     font-size: 12px;
 }
 
-.socials-bot ul{
+.socials-bot ul {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -729,12 +734,10 @@ footer{
 }
 
 
-
-
 /*_______________________________________________________________________________________*/
 /*                                       Om os sektion                                   */
 /*_______________________________________________________________________________________*/
-.omOsHTML{
+.omOsHTML {
     background-color: #d3deb1;
 }
 
@@ -864,7 +867,7 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        right:0;
+        right: 0;
     }
 
     #logo {
@@ -882,104 +885,108 @@ footer{
         display: none
     }
 
-    #frontpage-titel h2{
+    #frontpage-titel h2 {
         font-size: 2rem;
-          }
+    }
 
     #drawingPicture {
         width: 100%;
     }
 
     .piechart-sektion {
-    .pie-chart-section {
-        height: auto;
-        margin: 00px;
-    }
+        .pie-chart-section {
+            height: auto;
+            margin: 00px;
+        }
 
-    .chart1Pie {
-        flex-direction: column;
-    }
+        .chart1Pie {
+            flex-direction: column;
+        }
 
-    .piechart {
-        padding: 20px;
-    }
+        .piechart {
+            padding: 20px;
+        }
 
-    .piechart-header h1{
-        font-size: 2rem;
-    }
+        .piechart-header h1 {
+            font-size: 2rem;
+        }
 
-    .piehart-text p{
-        font-size: 1rem;
-    }
-    .chart {
-        height: 100px;
-        width: 100px;
-    }
+        .piehart-text p {
+            font-size: 1rem;
+        }
 
-    .active-header {
-        height: auto;
-    }
+        .chart {
+            height: 100px;
+            width: 100px;
+        }
 
-    .chart2active {
-        flex-direction: column;
-    }
+        .active-header {
+            height: auto;
+        }
 
-    .dashboard {
-        flex-wrap: wrap;
-    }
+        .chart2active {
+            flex-direction: column;
+        }
 
-    .check-container {
-        padding: 20px;
-    }
-    .filter-list li{
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 1rem;
-    }
+        .dashboard {
+            flex-wrap: wrap;
+        }
 
-    .chart-avg-time {
-        flex-direction: column;
-        height: auto;
-    }
+        .check-container {
+            padding: 20px;
+        }
 
-    .chart-time-left {
-        margin: 20px;
-    }
+        .filter-list li {
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 1rem;
+        }
 
-    .intro-pictures {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
+        .chart-avg-time {
+            flex-direction: column;
+            height: auto;
+        }
 
-    #animationScroll {
-        font-size: 5rem;
-    }
-    #animationScroll1 {
-        font-size: 5rem;
-    }
+        .chart-time-left {
+            margin: 20px;
+        }
 
-    .chart-tal-container {
-        flex-direction: column;
-    }
+        .intro-pictures {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        }
 
-    .containerForSlideshow {
-        height: 200px;
-        width: 400px;
-    }
+        #animationScroll {
+            font-size: 5rem;
+        }
 
-    .carrousels ul {
-        flex-direction: column;
-    }
-    #map {
-        width: 90%;
-    }
+        #animationScroll1 {
+            font-size: 5rem;
+        }
 
-    .map-of-campus {
-        width: 90%;
-        margin: 20px;
-    }
+        .chart-tal-container {
+            flex-direction: column;
+        }
 
-    footer {
-        font-size: 14px;
+        .containerForSlideshow {
+            height: 200px;
+            width: 400px;
+        }
+
+        .carrousels ul {
+            flex-direction: column;
+        }
+
+        #map {
+            width: 90%;
+        }
+
+        .map-of-campus {
+            width: 90%;
+            margin: 20px;
+        }
+
+        footer {
+            font-size: 14px;
+        }
     }
-}
