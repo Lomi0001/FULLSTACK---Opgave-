@@ -17,7 +17,7 @@ header{
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #FFF0D1;
     z-index: 2;
 }
@@ -27,10 +27,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 225px;
     height: 35px;
     text-decoration: none;
@@ -157,6 +155,11 @@ nav li:hover {
 
 .piechart {
     padding-left: 40px;
+}
+
+.chart {
+    height: 30rem;
+    width: 30rem;
 }
 
 /*_______________________________________________________________________________________*/
@@ -799,7 +802,7 @@ footer{
 /*                                       Media queries                                         */
 /*_______________________________________________________________________________________*/
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -822,32 +825,37 @@ footer{
         display: none
     }
 
-    #pictureFront h2{
+    #frontpage-titel h2{
         font-size: 2rem;
           }
 
-    .pie-chart-sektion {
+    #drawingPicture {
+        width: 100%;
+    }
+
+    .piechart-sektion {
         height: auto;
-        margin: 20px;
+        margin: 00px;
     }
 
     .chart1Pie {
         flex-direction: column;
     }
 
-    .Pie-right-container {
+    .piechart {
         padding: 20px;
     }
 
-    .pie-chart-header h1{
+    .piechart-header h1{
         font-size: 2rem;
     }
 
-    .Pie-right-container ul li p{
+    .piehart-text p{
         font-size: 1rem;
     }
-    .chart1Pie canvas {
+    .chart {
         height: 100px;
+        width: 100px;
     }
 
     .aktiv-header {
@@ -885,6 +893,16 @@ footer{
         grid-template-rows: repeat(6, 1fr);
     }
 
+    #animationScroll {
+        font-size: 5rem;
+    }
+    #animationScroll1 {
+        font-size: 5rem;
+    }
+
+    .chart-tal-container {
+        flex-direction: column;
+    }
 
     .containerForSlideshow {
         height: 200px;
@@ -893,6 +911,9 @@ footer{
 
     .carrousels ul {
         flex-direction: column;
+    }
+    #map {
+        width: 90%;
     }
 
     .map-of-campus {
