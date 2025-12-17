@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const detail = document.querySelector("#detail");
             const sygeplejeJordemoder = document.querySelector("#sygeplejeJordemoder");
             const undervisningPaedagogik = document.querySelector("#undervisningPaedagogik");
-            const sundhedsOmsorg = document.querySelector("#sundhedsOmsorg");
             const sosuHjem = document.querySelector("#sosuHjem");
 
             const BTN = document.querySelector("#SUB");
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 detail,
                 sygeplejeJordemoder,
                 undervisningPaedagogik,
-                sundhedsOmsorg,
                 sosuHjem
             ];
 
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 detail: 2,      // "Service- og salgsarbejde" eller anden du ønsker
                 sygeplejeJordemoder: 9,      // "Arbejde inden for sundhedsområdet"
                 undervisningPaedagogik: 4,   // "Undervisning og pædagogisk arbejde"
-                sundhedsOmsorg: 8,      // kan evt. pege på samme som ovenfor, tilpas efter behov
                 sosuHjem: 11       // samme her – tilpas efter dine ønsker
             };
 
@@ -72,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     align: 'center',
                                     rotation: -90,
                                     color: '#fff',
-                                    font: { weight: '600', size: 13 },
+                                    font: { weight: '1', size: 13, family:'DynaPuff' },
                                     formatter: (value, ctx) => ctx.chart.data.labels[ctx.dataIndex],
                                     clip: true
                                 },
@@ -83,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     align: 'end',
                                     offset: 6,
                                     color: "#800000",
-                                    font: { weight: '600', size: 13 },
+                                    font: { weight: '600', size: 13},
                                     formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
                                 }
                             }
