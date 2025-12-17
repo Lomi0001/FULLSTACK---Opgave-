@@ -21,7 +21,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r
 
 // Definér dit custom SVG-ikon
 const gavoIcon = L.icon({
-    iconUrl: "https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/main/logo/location-pin-svgrepo-com.svg",
+    iconUrl: "https://raw.githubusercontent.com/Lomi0001/FULLSTACK---Opgave-/refs/heads/main/logo/svg/icons8-pin-50.svg",
     iconSize: [40, 40],     // justér hvis det virker for stort/lille
     iconAnchor: [20, 40],   // nederste midte = "spidsen"
     popupAnchor: [0, -40]   // popup lige over ikonet
