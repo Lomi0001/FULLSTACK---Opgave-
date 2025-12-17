@@ -423,6 +423,7 @@ nav li:hover {
     height: 200px;
     border-radius: 30px;
     margin-bottom: 15px;
+    box-shadow: 2px 2px 7px black;
 }
 
 .carrousels {

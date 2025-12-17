@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     align: 'center',
                                     rotation: -90,
                                     color: '#fff',
-                                    font: { weight: '600', size: 13 },
+                                    font: { weight: '1', size: 13, family:'DynaPuff' },
                                     formatter: (value, ctx) => ctx.chart.data.labels[ctx.dataIndex],
                                     clip: true
                                 },
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     align: 'end',
                                     offset: 6,
                                     color: "#800000",
-                                    font: { weight: '600', size: 13 },
+                                    font: { weight: '600', size: 13},
                                     formatter: (value) => `${Math.round(value).toLocaleString('da-DK')} kr.`
                                 }
                             }
