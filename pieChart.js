@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         legend: { display: false },
                         datalabels: {
                             color: ["rgba(104, 83, 77, 0.33)","#fff", ],
-                            font: { weight: "bold", size: 30, family: "AppleMyungjo" },
+                            font: { weight: "bold", size: 30, family: "DynaPuff" },
                             formatter: (v, ctx) => {
                                 const total = ctx.chart._metasets[0].total;
                                 const pct = Math.round((v / total) * 100);
