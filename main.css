@@ -436,6 +436,7 @@ nav li:hover {
 
 .carrousels ul li {
     color: #800000;
+    list-style: none;
 }
 
 .prev, .next {
